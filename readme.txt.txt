@@ -5,8 +5,6 @@ SID:215210314
 
 == Description==
 
-
-
 This is an individual project 'Global treasure explorer' in developing a single player - Role-playing game(RPG) in Xcode where users experiences to direct the main character to defeating or interacting the auto-moving objects in each level.
 
 The key rules users need to follow are: overcoming the dangers in each level, defeating or avoiding enemies, and discovering the four treasures in each level. Once the user has discovered each of the four treasures, they can progress to the next level. 
