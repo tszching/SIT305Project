@@ -14,6 +14,7 @@
 		ADC4FC4C20886EB0001557CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC4FC4A20886EB0001557CA /* LaunchScreen.storyboard */; };
 		ADC4FC5720886EB0001557CA /* Project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC4FC5620886EB0001557CA /* Project2Tests.swift */; };
 		ADC4FC6220886EB0001557CA /* Project2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC4FC6120886EB0001557CA /* Project2UITests.swift */; };
+		ADC4FC702088A979001557CA /* StartGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC4FC6F2088A979001557CA /* StartGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		ADC4FC5D20886EB0001557CA /* Project2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC4FC6120886EB0001557CA /* Project2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2UITests.swift; sourceTree = "<group>"; };
 		ADC4FC6320886EB0001557CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC4FC6F2088A979001557CA /* StartGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				ADC4FC4120886EB0001557CA /* AppDelegate.swift */,
 				ADC4FC4320886EB0001557CA /* ViewController.swift */,
 				ADC4FC4520886EB0001557CA /* Main.storyboard */,
+				ADC4FC6F2088A979001557CA /* StartGameViewController.swift */,
 				ADC4FC4820886EB0001557CA /* Assets.xcassets */,
 				ADC4FC4A20886EB0001557CA /* LaunchScreen.storyboard */,
 				ADC4FC4D20886EB0001557CA /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				ADC4FC4420886EB0001557CA /* ViewController.swift in Sources */,
 				ADC4FC4220886EB0001557CA /* AppDelegate.swift in Sources */,
+				ADC4FC702088A979001557CA /* StartGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
