@@ -2,8 +2,11 @@
 Project progress
 
 ==Contributor==
+
 Unit:SIT305 Android and Ios Mobile Programming
+
 Name: Tsz Ching Kwok (Chloe)
+
 SID:215210314
 
 == Description==
