@@ -21,7 +21,24 @@ The Purpose of this text-based RPG is to keep users entertainment and reducing t
 
 ==Compile instructions==
 
+1. Open 'Xcode' then go to 'File' on the top of Mac taskbar and press 'Open...'
 
+2. Click on my folder 'SIT305Project-master' from where you downloaded > Project2 > Project2.xcodeproj > Open
+
+3a. To turn on the iOS simulators and run the project, you need to: 
+          a: Select a simulator from the top left where it has a little Xcode logo
+          b: After choosing a simulator eg:  you pick iPhone 6
+          c: Click on "Play" - a dark grey triangle on the top left.
+          
+          OR
+3b. Go to Product on the top of Mac taskbar and press 'Run' (Command R)- auto selected simulator for you
+
+
+4. Orientation of Screen: 
+          After simulator has been loaded, my project will auto pop-up and you can simplify click (Command + left arrow) or (Command + right arrow) on keyboard to change the rotating of your virtual Iphone.
+
+
+5. You can now exploring my game - "Global treasure explorer"
 
 
 ==Data Structure==
