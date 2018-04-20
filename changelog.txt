@@ -11,7 +11,7 @@ In Week 6, Chloe Kwok has design the UI for the storyboard template in text base
 
 
 20th April
-In Week 6, Chloe Know has designed more screens for the UI template and applied some function like music effects, enemies popup animation and the navigation story to be more creative of the game. 
+In Week 6, Chloe Kwok has designed more screens for the UI template and applied some function like music effects, enemies popup animation and the navigation story to be more creative of the game. 
 -Setting
 -About
 -Game Layers
