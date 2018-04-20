@@ -1,0 +1,35 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 14th March \
+\
+In week 3, Chloe Kwok has researched some RPG game for the Project Plan and had some concepts for Project 2.\
+\
+\
+10th April\
+In week 5, Chloe Kwok has checked some pervious assignments, check youtube video for RPG game and design a simple template for RPG game\
+\
+\
+19th April \
+In Week 6, Chloe Kwok has design the UI for the storyboard template in text based RPG and added some navigated buttons and reviews some other youtube videos as for other functions such animation and popup function.\
+\
+\
+20th April\
+In Week 6, Chloe Know has design more screen for the UI template and applied some function like music effects and enemies popup animation to be more creative of the game. \
+-Setting\
+-About\
+-Game Layers\
+-In-game verison \
+-HomePage\
+These screens are mostly done by the design but to be more creative and attract user to play my game, I\'92ll add more functionaries in each screen that are necessary to add.   \
+\
+In Week 6,\
+ Try to complete the UI design for Score screen and Achievement screen\
+Then make apply for function and coding into the game be more creative\
+\
+In week 7, \
+Start the data for this gaming project and improve the game coding and concept. }
