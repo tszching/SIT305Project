@@ -24,4 +24,4 @@ The end of Week 6,
 Then apply for functions and coding into the game be more creative
 
 In week 7, 
-Start the data for this gaming project and improve the game coding and concept. 
+Start the database for this gaming project (Score, Achievement, Game Action Screens) and improve the game coding and concept. 
