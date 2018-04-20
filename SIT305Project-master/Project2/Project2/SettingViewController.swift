@@ -1,29 +1,24 @@
 //
-//  StartGameViewController.swift
+//  SettingViewController.swift
 //  Project2
 //
-//  Created by CHLOE KWOK on 19/4/18.
+//  Created by DARKEUNG on 20/4/2018.
 //  Copyright © 2018 CHLOE KWOK. All rights reserved.
 //
 
 import UIKit
 
-
-class StartGameViewController: UIViewController {
-    
-    
+class SettingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        // Do any additional setup after loading the view.
     }
-    @IBAction func Game2(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG2") as! StartGame2ViewController
-        self.present(vc, animated: true,completion: nil)
+
+    @IBAction func backing(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

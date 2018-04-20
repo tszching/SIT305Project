@@ -10,6 +10,10 @@ import UIKit
 
 class StartGame2ViewController: UIViewController {
 
+    
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
