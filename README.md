@@ -70,3 +70,188 @@ My ViewController.swift files which included:
 
 
 ==Data Structure==
+
+Level: 
+
+import UIKit
+import AVFoundation
+
+class LevelViewController: UIViewController {
+    
+    // Variables
+    var soundPlayer: AVAudioPlayer?
+    var elapsedTime: TimeInterval = 0
+    
+    
+    // Do any additional setup after loading the view.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let path = Bundle.main.path(forResource: "Music1", ofType:"mp3")
+        let url = URL(fileURLWithPath: path!)
+        
+        do
+        {
+            try soundPlayer = AVAudioPlayer(contentsOf: url)
+        }
+        catch {print("file not availale")}
+        
+    }
+
+       
+
+    @IBAction func backH(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func Game1(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG") as! StartGameViewController
+        self.present(vc, animated: true,completion: nil)
+    }
+    /// Switching music player
+    ///
+    /// - Parameter sender:
+    @IBAction func musicswitch(_ sender: UISwitch) {
+        if sender.isOn == true
+        {
+            if soundPlayer != nil{
+                soundPlayer!.currentTime = elapsedTime
+                soundPlayer!.play()}
+            
+        }
+        
+        if sender.isOn == false
+        {
+            if soundPlayer != nil{
+                soundPlayer!.stop()
+                elapsedTime = 0}
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+StartGame:
+
+    @IBAction func Game2(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG2") as! StartGame2ViewController
+        self.present(vc, animated: true,completion: nil)
+    }
+    
+StartGame2:
+
+    // Variables
+     var gameTimer : Timer?
+    var gravity : UIGravityBehavior?
+    var animator : UIDynamicAnimator?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Set timer to show snowflaks
+        gameTimer = Timer.scheduledTimer(timeInterval: 1,
+                                         target: self,
+                                         selector: #selector(StartGame2ViewController.addenemy(_ :)), userInfo: nil, repeats: true)
+        
+        // Register an animator
+        animator = UIDynamicAnimator(referenceView: self.view)
+        gravity = UIGravityBehavior(items:[])
+        
+        //Gravity magnitude and direction
+        let vector = CGVector(dx: 0.0, dy: 0.1)
+        gravity?.gravityDirection = vector
+        animator?.addBehavior(gravity!)
+        // Do any additional setup after loading the view.
+    }
+
+
+    
+    @objc func addenemy ( _ : Any) {
+        
+        //Pick a random x position for the balloon
+        let xCoordinate = arc4random() % UInt32 (self.view.bounds.width)
+        
+        //Create a button, set Image, assign touchUpInside handler, add it to the view and gravity animator
+        
+        let btn = UIButton(frame: CGRect (x: Int(xCoordinate), y:60, width: 30, height : 30))
+        btn.setImage(UIImage(named: "enemy2"), for: .normal)
+        btn.addTarget(self, action: #selector(self.enemypopup(sender:)), for: .touchUpInside )
+        self.view.addSubview(btn)
+        
+        gravity?.addItem( btn as UIView)
+        
+    }
+    
+    @objc func enemypopup (sender : UIButton) {
+        
+        sender.setImage(UIImage (named : "enemy1"), for: .normal)
+        UIView.animate(withDuration: 0.4, animations:{sender.alpha = 0},
+                       completion: {(true) in sender.removeFromSuperview()})
+        
+    }
+    
+
+
+About:
+
+    @IBAction func backHome(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+Setting: 
+
+import UIKit
+import AVFoundation
+
+class SettingViewController: UIViewController {
+
+    // Variables
+    var soundPlayer: AVAudioPlayer?
+    var elapsedTime: TimeInterval = 0
+    
+    // Do any additional setup after loading the view.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let path = Bundle.main.path(forResource: "Music1", ofType:"mp3")
+        let url = URL(fileURLWithPath: path!)
+        
+        do
+        {
+            try soundPlayer = AVAudioPlayer(contentsOf: url)
+        }
+        catch {print("file not availale")}
+        
+    }
+    
+    @IBAction func backing(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    // Volume changes via slider function
+    @IBAction func slider(_ sender: UISlider) {
+        
+        soundPlayer?.volume = sender.value
+    }
+    
+    /// Switching music player
+    ///
+    /// - Parameter sender:
+    @IBAction func musicswitch(_ sender: UISwitch) {
+        if sender.isOn == true
+        {
+            if soundPlayer != nil{
+                soundPlayer!.currentTime = elapsedTime
+                soundPlayer!.play()}
+            
+        }
+        
+        if sender.isOn == false
+        {
+            if soundPlayer != nil{
+                soundPlayer!.stop()
+                elapsedTime = 0}
+        }
+    }
+
