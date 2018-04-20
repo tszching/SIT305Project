@@ -21,7 +21,7 @@ These screens are mostly done by the design but to be more creative and attract 
 
 The end of Week 6,
  Try to complete the UI design for Score screen and Achievement screen
-Then make apply for function and coding into the game be more creative
+Then apply for functions and coding into the game be more creative
 
 In week 7, 
 Start the data for this gaming project and improve the game coding and concept. 
