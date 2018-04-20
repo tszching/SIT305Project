@@ -16,6 +16,7 @@
 		5913AF6120896EFB00AB7585 /* images.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5913AF6020896EFA00AB7585 /* images.atlas */; };
 		5913AF632089808A00AB7585 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5913AF622089808A00AB7585 /* AboutViewController.swift */; };
 		5913AF652089830700AB7585 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5913AF642089830600AB7585 /* SettingViewController.swift */; };
+		5913AF672089927300AB7585 /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5913AF662089927200AB7585 /* Music1.mp3 */; };
 		ADC4FC4220886EB0001557CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC4FC4120886EB0001557CA /* AppDelegate.swift */; };
 		ADC4FC4420886EB0001557CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC4FC4320886EB0001557CA /* ViewController.swift */; };
 		ADC4FC4720886EB0001557CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC4FC4520886EB0001557CA /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		5913AF6020896EFA00AB7585 /* images.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = images.atlas; path = ../../../images.atlas; sourceTree = "<group>"; };
 		5913AF622089808A00AB7585 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5913AF642089830600AB7585 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		5913AF662089927200AB7585 /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Music1.mp3; path = ../../../Music1.mp3; sourceTree = "<group>"; };
 		ADC4FC3E20886EB0001557CA /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC4FC4120886EB0001557CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC4FC4320886EB0001557CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				5913AF5E20896D9E00AB7585 /* GameScene.swift */,
 				5913AF5820894DC700AB7585 /* StartGame3ViewController.swift */,
 				ADC4FC6F2088A979001557CA /* StartGameViewController.swift */,
+				5913AF662089927200AB7585 /* Music1.mp3 */,
 				5913AF6020896EFA00AB7585 /* images.atlas */,
 				ADC4FC4820886EB0001557CA /* Assets.xcassets */,
 				ADC4FC4A20886EB0001557CA /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				ADC4FC4C20886EB0001557CA /* LaunchScreen.storyboard in Resources */,
 				5913AF6120896EFB00AB7585 /* images.atlas in Resources */,
+				5913AF672089927300AB7585 /* Music1.mp3 in Resources */,
 				ADC4FC4920886EB0001557CA /* Assets.xcassets in Resources */,
 				ADC4FC4720886EB0001557CA /* Main.storyboard in Resources */,
 			);

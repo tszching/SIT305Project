@@ -10,7 +10,7 @@ import UIKit
 
 
 class StartGameViewController: UIViewController {
-    
+
     
 
     override func viewDidLoad() {
