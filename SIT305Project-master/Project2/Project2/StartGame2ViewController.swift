@@ -15,10 +15,6 @@ class StartGame2ViewController: UIViewController {
     var gravity : UIGravityBehavior?
     var animator : UIDynamicAnimator?
     
-    
- 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,10 +34,7 @@ class StartGame2ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
-    
-    
-    
+
     
     @objc func addenemy ( _ : Any) {
         
