@@ -11,6 +11,13 @@ Name: Jian Wang (Carson)
 SID:215210314
 SID:215326179
 
+# Henry comments 27/April
+- This file needs directory explanation so I know where to find stuff. I won't be looking in an IDE. I'll be looking at files on a hard drive.
+- Your changelog needs a lot of work. Missing tasks that were complete, hasn't said who did what task each day of work, etc.
+- Your data hasn't progressed enough. You need to get to this very quickly, as you can't start building your game until you can at least load the levels/world of your game. So work on getting loading working (from data files) asap.
+- There are many repeated files (readme, project directories, etc), so they overlap. Please delete / merge irrelevant files.
+
+
 == Description==
 
 This is a group project 'Global treasure explorer' in developing a single player - text-based Role-playing game(RPG) in Xcode where users experiences to direct the main character to defeating or interacting the auto-moving objects in each level. The key rules users need to follow are: choosing different situation in defeating or avoiding enemies and discovering the Four treasures in each level. Once the user has discovered each of the Four treasures, they can progress to the next level. The game will feature three countries, with a dedicated level for each country for the user to complete. 
