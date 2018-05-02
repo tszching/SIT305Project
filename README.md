@@ -18,7 +18,7 @@ SID:215326179
 - There are many repeated files (readme, project directories, etc), so they overlap. Please delete / merge irrelevant files.
 
 
-== Description==
+# == Description==
 
 This is a group project 'Global treasure explorer' in developing a single player - text-based Role-playing game(RPG) in Xcode where users experiences to direct the main character to defeating or interacting the auto-moving objects in each level. The key rules users need to follow are: choosing different situation in defeating or avoiding enemies and discovering the Four treasures in each level. Once the user has discovered each of the Four treasures, they can progress to the next level. The game will feature three countries, with a dedicated level for each country for the user to complete. 
 
@@ -28,7 +28,7 @@ They will be functioning in such as the Data Persistence, Networking and few API
 The Purpose of this text-based RPG is to keep users entertainment and reducing their stress while they can learn the education in-game from the countries they explore. 
 
 
-==Compile instructions==
+# ==Compile instructions==
 
 1. Open 'Xcode' then go to 'File' on the top of Mac taskbar and press 'Open...'
 
@@ -50,12 +50,12 @@ The Purpose of this text-based RPG is to keep users entertainment and reducing t
 5. You can now exploring my game - "Global treasure explorer"
 
 
-==Directory Structure==
+# ==Directory Structure==
 
 Directory Structure is where the coding files,assets images folders and all other relevant folders located on the left listbar.
 
 
-==Game Data & Important Code==
+# ==Game Data & Important Code==
 
 1. Expand the grey triangle with a blue document logo in Project2 
 2. Expand the Project2 folder
@@ -78,7 +78,7 @@ My ViewController.swift files which included:
 -ThirdGameViewController.swift is the Third layer/level of the game. 
 
 
-==Data Structure==
+# ==Data Structure==
 
 Level: 
 
