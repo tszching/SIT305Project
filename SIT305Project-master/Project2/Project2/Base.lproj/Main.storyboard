@@ -246,20 +246,17 @@
                                 <rect key="frame" x="27" y="44" width="150" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy2" translatesAutoresizingMaskIntoConstraints="NO" id="Byf-JT-ml6">
-                                <rect key="frame" x="80" y="362" width="186" height="186"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enemy2" translatesAutoresizingMaskIntoConstraints="NO" id="NCZ-vV-zHT">
+                                <rect key="frame" x="33" y="281" width="255" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-tu-Epi">
-                                <rect key="frame" x="150" y="303" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="btn"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="R9u-V1-Pqr"/>
                     </view>
+                    <connections>
+                        <outlet property="Img" destination="NCZ-vV-zHT" id="tg4-vg-Glw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7H-EQ-CdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -590,7 +587,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pn3-bX-Mrk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.25" y="31.690140845070424"/>
+            <point key="canvasLocation" x="576" y="32"/>
         </scene>
     </scenes>
     <resources>
