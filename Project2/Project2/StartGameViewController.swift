@@ -15,7 +15,6 @@ class StartGameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
        
     }
     @IBAction func Game2(_ sender: Any) {
