@@ -16,7 +16,9 @@
 		5913AF632089808A00AB7585 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5913AF622089808A00AB7585 /* AboutViewController.swift */; };
 		5913AF652089830700AB7585 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5913AF642089830600AB7585 /* SettingViewController.swift */; };
 		59167D1F20920F3C00D2DBC9 /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59167D1E20920F3B00D2DBC9 /* Music1.mp3 */; };
+		594C40D9209DC9E60031E98F /* StartGame5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594C40D8209DC9E60031E98F /* StartGame5ViewController.swift */; };
 		59773EF9208E1D60005951A4 /* StartGame4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59773EF8208E1D60005951A4 /* StartGame4ViewController.swift */; };
+		59A1195E20A18A480026FF08 /* Scene1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1195D20A18A480026FF08 /* Scene1ViewController.swift */; };
 		ADC4FC4220886EB0001557CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC4FC4120886EB0001557CA /* AppDelegate.swift */; };
 		ADC4FC4420886EB0001557CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC4FC4320886EB0001557CA /* ViewController.swift */; };
 		ADC4FC4720886EB0001557CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC4FC4520886EB0001557CA /* Main.storyboard */; };
@@ -54,8 +56,10 @@
 		5913AF622089808A00AB7585 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5913AF642089830600AB7585 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		59167D1E20920F3B00D2DBC9 /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Music1.mp3; path = ../../../Music1.mp3; sourceTree = "<group>"; };
+		594C40D8209DC9E60031E98F /* StartGame5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGame5ViewController.swift; sourceTree = "<group>"; };
 		59773EEF208E1AF5005951A4 /* Project2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project2-Bridging-Header.h"; sourceTree = "<group>"; };
 		59773EF8208E1D60005951A4 /* StartGame4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGame4ViewController.swift; sourceTree = "<group>"; };
+		59A1195D20A18A480026FF08 /* Scene1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene1ViewController.swift; sourceTree = "<group>"; };
 		ADC4FC3E20886EB0001557CA /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC4FC4120886EB0001557CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC4FC4320886EB0001557CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				ADC4FC4120886EB0001557CA /* AppDelegate.swift */,
 				ADC4FC4320886EB0001557CA /* ViewController.swift */,
 				ADC4FC4520886EB0001557CA /* Main.storyboard */,
+				59A1195D20A18A480026FF08 /* Scene1ViewController.swift */,
+				594C40D8209DC9E60031E98F /* StartGame5ViewController.swift */,
 				5913AF622089808A00AB7585 /* AboutViewController.swift */,
 				5913AF5A20895C8D00AB7585 /* SecondGameViewController.swift */,
 				5913AF5C20895CA400AB7585 /* ThirdGameViewController.swift */,
@@ -297,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59773EF9208E1D60005951A4 /* StartGame4ViewController.swift in Sources */,
+				594C40D9209DC9E60031E98F /* StartGame5ViewController.swift in Sources */,
 				5913AF5B20895C8D00AB7585 /* SecondGameViewController.swift in Sources */,
 				5913AF652089830700AB7585 /* SettingViewController.swift in Sources */,
 				ADC4FC4420886EB0001557CA /* ViewController.swift in Sources */,
@@ -308,6 +315,7 @@
 				ADC4FC702088A979001557CA /* StartGameViewController.swift in Sources */,
 				5913AF632089808A00AB7585 /* AboutViewController.swift in Sources */,
 				5913AF552089020400AB7585 /* LevelViewController.swift in Sources */,
+				59A1195E20A18A480026FF08 /* Scene1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

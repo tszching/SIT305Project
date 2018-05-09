@@ -11,7 +11,7 @@ import UIKit
 class StartGame2ViewController: UIViewController {
 
     
-    @IBOutlet weak var Img: UIImageView!
+    
     
     // Variables
      var gameTimer : Timer?
@@ -20,7 +20,7 @@ class StartGame2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-Img.center.x = self.view.frame.width + 30
+
         // Set timer to show snowflaks
         gameTimer = Timer.scheduledTimer(timeInterval: 1,
                                          target: self,
@@ -37,12 +37,7 @@ Img.center.x = self.view.frame.width + 30
         
         
         
-        
-        
-        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 30, initialSpringVelocity: 30, options: UIViewAnimationOptions(rawValue: 0), animations: ({
-            self.Img.center.x = self.view.frame.width / 2
-        })
-            , completion: nil)
+     
             
         
     
@@ -75,6 +70,9 @@ Img.center.x = self.view.frame.width + 30
         
     }
     
+    @IBAction func Game5(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG5") as! StartGame5ViewController; self.present(vc, animated: true, completion: nil)
+    }
     
     
     override func didReceiveMemoryWarning() {

@@ -30,15 +30,11 @@ class LevelViewController: UIViewController {
         
     }
 
-       
-
+    
     @IBAction func backH(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    @IBAction func Game1(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG") as! StartGameViewController
-        self.present(vc, animated: true,completion: nil)
-    }
+  
     /// Switching music player
     ///
     /// - Parameter sender:
