@@ -12,9 +12,11 @@ class Scene1ViewController: UIViewController {
    
     
     @IBOutlet weak var FirstScene: UILabel!
-
+    @IBOutlet weak var backB: UIButton!
+    @IBOutlet weak var nextB: UIButton!
     
-    let scence1 = "Wow I have finally arrived to this beautiful land in Holland. This will be an amazing jounery, I can\'t wait to exploring things. Now! Let me take a look at what\'s up there!!"
+    
+    let scence1 = "Wow I have finally arrived to this beautiful land in Holland. \nThis will be an amazing jounery, I can't wait to exploring things. \nHopefully, this jounery will be full of excited experience but it is a happy trip without meeting the bad people... \nNow! Let me take a look at what's up there!!"
     
     
     
@@ -22,7 +24,11 @@ class Scene1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        FirstScene.alpha = 0
+        backB.alpha = 0
+        nextB.alpha = 0
         
+    
         
        startingscene()
         // Do any additional setup after loading the view.
@@ -41,6 +47,27 @@ class Scene1ViewController: UIViewController {
         dismiss (animated: true, completion: nil)
     }
     
+    // animation fading in and out
+    override func viewDidAppear(_ animated: Bool){
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1, animations: {
+         self.FirstScene.alpha = 0.9
+        }) {(true) in
+            self.showButtonBN()
+        }
+    }
+    
+    func showButtonBN(){
+        UIView.animate(withDuration: 1, animations: {
+            self.backB.alpha = 1
+            self.nextB.alpha = 1
+            })
+        }
+    
+    
+   
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,6 +79,8 @@ class Scene1ViewController: UIViewController {
   
         
     }
+    
+    
     /*
     // MARK: - Navigation
 

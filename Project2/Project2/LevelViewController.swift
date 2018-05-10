@@ -19,6 +19,7 @@ class LevelViewController: UIViewController {
     // Do any additional setup after loading the view.
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let path = Bundle.main.path(forResource: "Music1", ofType:"mp3")
         let url = URL(fileURLWithPath: path!)
         
@@ -31,9 +32,6 @@ class LevelViewController: UIViewController {
     }
 
     
-    @IBAction func backH(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
   
     /// Switching music player
     ///

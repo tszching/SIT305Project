@@ -19,6 +19,7 @@
 		594C40D9209DC9E60031E98F /* StartGame5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594C40D8209DC9E60031E98F /* StartGame5ViewController.swift */; };
 		59773EF9208E1D60005951A4 /* StartGame4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59773EF8208E1D60005951A4 /* StartGame4ViewController.swift */; };
 		59A1195E20A18A480026FF08 /* Scene1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1195D20A18A480026FF08 /* Scene1ViewController.swift */; };
+		59C819E920A4842A00D8FE49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C819E820A4842A00D8FE49 /* LoginViewController.swift */; };
 		ADC4FC4220886EB0001557CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC4FC4120886EB0001557CA /* AppDelegate.swift */; };
 		ADC4FC4420886EB0001557CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC4FC4320886EB0001557CA /* ViewController.swift */; };
 		ADC4FC4720886EB0001557CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC4FC4520886EB0001557CA /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		59773EEF208E1AF5005951A4 /* Project2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project2-Bridging-Header.h"; sourceTree = "<group>"; };
 		59773EF8208E1D60005951A4 /* StartGame4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGame4ViewController.swift; sourceTree = "<group>"; };
 		59A1195D20A18A480026FF08 /* Scene1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene1ViewController.swift; sourceTree = "<group>"; };
+		59C819E820A4842A00D8FE49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADC4FC3E20886EB0001557CA /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC4FC4120886EB0001557CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC4FC4320886EB0001557CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		ADC4FC4020886EB0001557CA /* Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				59C819E820A4842A00D8FE49 /* LoginViewController.swift */,
 				59773EF8208E1D60005951A4 /* StartGame4ViewController.swift */,
 				ADC4FC4120886EB0001557CA /* AppDelegate.swift */,
 				ADC4FC4320886EB0001557CA /* ViewController.swift */,
@@ -305,6 +308,7 @@
 				59773EF9208E1D60005951A4 /* StartGame4ViewController.swift in Sources */,
 				594C40D9209DC9E60031E98F /* StartGame5ViewController.swift in Sources */,
 				5913AF5B20895C8D00AB7585 /* SecondGameViewController.swift in Sources */,
+				59C819E920A4842A00D8FE49 /* LoginViewController.swift in Sources */,
 				5913AF652089830700AB7585 /* SettingViewController.swift in Sources */,
 				ADC4FC4420886EB0001557CA /* ViewController.swift in Sources */,
 				5913AF5720894DB300AB7585 /* StartGame2ViewController.swift in Sources */,
