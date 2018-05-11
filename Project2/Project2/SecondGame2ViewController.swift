@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  SecondGame2ViewController.swift
 //  Project2
 //
 //  Created by DARKEUNG on 11/5/2018.
@@ -8,21 +8,12 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class SecondGame2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func level(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LV") as! LevelViewController;
-        self.present(vc, animated: true, completion: nil)
-    }
-    
-    @IBAction func backM(_ sender: Any) {
-        dismiss (animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

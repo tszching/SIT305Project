@@ -1,5 +1,5 @@
 //
-//  Scene1ViewController.swift
+//  Scene2ViewController.swift
 //  Project2
 //
 //  Created by DARKEUNG on 11/5/2018.
@@ -8,22 +8,23 @@
 
 import UIKit
 
-class Scene1ViewController: UIViewController {
+class Scene2ViewController: UIViewController {
 
-    @IBOutlet weak var FirstScene: UILabel!
+    @IBOutlet weak var SecScene: UILabel!
+    
     @IBOutlet weak var backB: UIButton!
+    
     @IBOutlet weak var nextB: UIButton!
     
     
-    let scene1 = "Wow I have finally arrived to this beautiful land in Holland. \nThis will be an amazing jounery, I can't wait to exploring things. \nHopefully, this jounery will be full of excited experience but it is a happy trip if I will be meeting the good people surronding me... \nNow! Let me take a look at what's up there!!"
     
-    
-    
+    let scene2 = "Beautiful!Beautiful!Beautiful! I can't believe what I'm just seeing now, the most romantic city on this planet Venezia. Watching the lights, enjoying the wind wish I can stay for this moment forever but here I am come to all the way along this jounery. Let me start to explore you Italy! hIl mio cuore è solo tuo"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        FirstScene.alpha = 0
+        SecScene.alpha = 0
         backB.alpha = 0
         nextB.alpha = 0
         
@@ -32,14 +33,11 @@ class Scene1ViewController: UIViewController {
         startingscene()
         // Do any additional setup after loading the view.
     }
-    
-    
-    
-    
-    
-    @IBAction func Game1(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG") as! StartGameViewController
-        self.present(vc, animated: true,completion: nil)
+
+    @IBAction func SecGame1(_ sender: Any) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SSG") as! SecondGameViewController
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func backL(_ sender: Any) {
@@ -51,7 +49,7 @@ class Scene1ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         UIView.animate(withDuration: 1, animations: {
-            self.FirstScene.alpha = 0.9
+            self.SecScene.alpha = 0.9
         }) {(true) in
             self.showButtonBN()
         }
@@ -64,21 +62,15 @@ class Scene1ViewController: UIViewController {
         })
     }
     
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func startingscene() {
+
+    func startingscene(){
         
-        FirstScene.text = self.scene1
-        
-        
+        SecScene.text = self.scene2
     }
-    
 
     /*
     // MARK: - Navigation

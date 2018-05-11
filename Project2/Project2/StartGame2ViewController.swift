@@ -2,8 +2,8 @@
 //  StartGame2ViewController.swift
 //  Project2
 //
-//  Created by DARKEUNG on 20/4/2018.
-//  Copyright © 2018 CHLOE KWOK. All rights reserved.
+//  Created by DARKEUNG on 11/5/2018.
+//  Copyright © 2018 DARKEUNG. All rights reserved.
 //
 
 import UIKit
@@ -11,16 +11,14 @@ import UIKit
 class StartGame2ViewController: UIViewController {
 
     
-    
-    
     // Variables
-     var gameTimer : Timer?
+    var gameTimer : Timer?
     var gravity : UIGravityBehavior?
     var animator : UIDynamicAnimator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Set timer to show snowflaks
         gameTimer = Timer.scheduledTimer(timeInterval: 1,
                                          target: self,
@@ -35,16 +33,16 @@ class StartGame2ViewController: UIViewController {
         gravity?.gravityDirection = vector
         animator?.addBehavior(gravity!)
         
+        // Loading all gif images 
+        GifView.loadGif(name: "try")
         
         
-     
-            
         
-    
+        
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
     
     @objc func addenemy ( _ : Any) {
         
@@ -70,11 +68,12 @@ class StartGame2ViewController: UIViewController {
         
     }
     
+   
+    @IBOutlet weak var GifView: UIImageView!
     @IBAction func Game5(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG5") as! StartGame5ViewController; self.present(vc, animated: true, completion: nil)
     }
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

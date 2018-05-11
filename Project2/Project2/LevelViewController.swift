@@ -2,8 +2,8 @@
 //  LevelViewController.swift
 //  Project2
 //
-//  Created by DARKEUNG on 20/4/2018.
-//  Copyright © 2018 CHLOE KWOK. All rights reserved.
+//  Created by DARKEUNG on 11/5/2018.
+//  Copyright © 2018 DARKEUNG. All rights reserved.
 //
 
 import UIKit
@@ -30,9 +30,9 @@ class LevelViewController: UIViewController {
         catch {print("file not availale")}
         
     }
-
     
-  
+    
+    
     /// Switching music player
     ///
     /// - Parameter sender:
@@ -52,7 +52,7 @@ class LevelViewController: UIViewController {
                 elapsedTime = 0}
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
