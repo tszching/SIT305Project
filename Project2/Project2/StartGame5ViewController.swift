@@ -16,6 +16,20 @@ class StartGame5ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+ 
+    @IBOutlet weak var ppl: UIButton!
+    @IBOutlet weak var windmill: UIButton!
+    
+    
+    
+    @IBAction func ppl(_ sender: UIButton) {
+        ppl.isHidden = true
+    }
+    @IBAction func windmill(_ sender: UIButton) {
+        windmill.isHidden = true
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

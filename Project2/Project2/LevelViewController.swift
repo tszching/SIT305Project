@@ -32,6 +32,12 @@ class LevelViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var userlbl: UILabel!
+    
+    // Show the saved username from Login ViewController
+    override func viewDidAppear(_ animated: Bool)
+    {  userlbl.text = username
+    }
     
     /// Switching music player
     ///

@@ -16,6 +16,9 @@ class StartGameViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    @IBAction func flower(_ sender: UIButton) {
+        flower.isHidden = true
+    }
     @IBAction func Game2(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG2") as! StartGame2ViewController
         self.present(vc, animated: true,completion: nil)
