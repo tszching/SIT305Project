@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		597F09BC20A5CB45001597A0 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F09BB20A5CB45001597A0 /* Gif.swift */; };
 		597F09BE20A5CEDA001597A0 /* try.gif in Resources */ = {isa = PBXBuildFile; fileRef = 597F09BD20A5CECE001597A0 /* try.gif */; };
+		597F09C020A6E930001597A0 /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 597F09BF20A6E930001597A0 /* Music1.mp3 */; };
 		59C81A1820A49BCF00D8FE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A1720A49BCF00D8FE49 /* AppDelegate.swift */; };
 		59C81A1A20A49BCF00D8FE49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A1920A49BCF00D8FE49 /* ViewController.swift */; };
 		59C81A1D20A49BCF00D8FE49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C81A1B20A49BCF00D8FE49 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		59C81A2520A49BD200D8FE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C81A2320A49BD200D8FE49 /* LaunchScreen.storyboard */; };
 		59C81A3020A49BD200D8FE49 /* Project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A2F20A49BD200D8FE49 /* Project2Tests.swift */; };
 		59C81A3B20A49BD200D8FE49 /* Project2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A3A20A49BD200D8FE49 /* Project2UITests.swift */; };
-		59C81A4920A4AF3E00D8FE49 /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59C81A4820A4AF3E00D8FE49 /* Music1.mp3 */; };
 		59C81A4B20A4AFB400D8FE49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A4A20A4AFB400D8FE49 /* LoginViewController.swift */; };
 		59C81A4D20A4B01400D8FE49 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A4C20A4B01400D8FE49 /* AboutViewController.swift */; };
 		59C81A4F20A4B03E00D8FE49 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A4E20A4B03E00D8FE49 /* SettingViewController.swift */; };
@@ -56,6 +56,7 @@
 /* Begin PBXFileReference section */
 		597F09BB20A5CB45001597A0 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		597F09BD20A5CECE001597A0 /* try.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = try.gif; sourceTree = "<group>"; };
+		597F09BF20A6E930001597A0 /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music1.mp3; sourceTree = "<group>"; };
 		59C81A1420A49BCF00D8FE49 /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C81A1720A49BCF00D8FE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59C81A1920A49BCF00D8FE49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		59C81A3620A49BD200D8FE49 /* Project2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C81A3A20A49BD200D8FE49 /* Project2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2UITests.swift; sourceTree = "<group>"; };
 		59C81A3C20A49BD200D8FE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59C81A4820A4AF3E00D8FE49 /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Music1.mp3; path = ../../Music1.mp3; sourceTree = "<group>"; };
 		59C81A4A20A4AFB400D8FE49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		59C81A4C20A4B01400D8FE49 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		59C81A4E20A4B03E00D8FE49 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				59C81A2320A49BD200D8FE49 /* LaunchScreen.storyboard */,
 				59C81A2620A49BD200D8FE49 /* Info.plist */,
 				59C81A1E20A49BCF00D8FE49 /* Project2.xcdatamodeld */,
-				59C81A4820A4AF3E00D8FE49 /* Music1.mp3 */,
+				597F09BF20A6E930001597A0 /* Music1.mp3 */,
 				597F09BD20A5CECE001597A0 /* try.gif */,
 			);
 			path = Project2;
@@ -291,8 +291,8 @@
 			files = (
 				597F09BE20A5CEDA001597A0 /* try.gif in Resources */,
 				59C81A2520A49BD200D8FE49 /* LaunchScreen.storyboard in Resources */,
+				597F09C020A6E930001597A0 /* Music1.mp3 in Resources */,
 				59C81A2220A49BD200D8FE49 /* Assets.xcassets in Resources */,
-				59C81A4920A4AF3E00D8FE49 /* Music1.mp3 in Resources */,
 				59C81A1D20A49BCF00D8FE49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

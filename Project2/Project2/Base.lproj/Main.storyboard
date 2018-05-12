@@ -224,9 +224,11 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSZ-p2-JyY">
-                                <rect key="frame" x="195" y="285" width="142" height="61"/>
+                                <rect key="frame" x="41" y="364" width="139" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Italy" backgroundImage="italy"/>
+                                <state key="normal" title="Italy" backgroundImage="italy">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="ClG-Xr-Riq" kind="show" id="FH3-qP-zod"/>
                                 </connections>
@@ -243,7 +245,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2A-e9-rQu">
-                                <rect key="frame" x="37" y="285" width="139" height="61"/>
+                                <rect key="frame" x="41" y="285" width="139" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Netherlands" backgroundImage="Netherlands"/>
                                 <connections>
@@ -251,11 +253,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-Ve-EqS">
-                                <rect key="frame" x="37" y="368" width="139" height="67"/>
+                                <rect key="frame" x="193" y="285" width="139" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Korea" backgroundImage="Korea">
-                                    <color key="titleColor" red="0.37157344819999999" green="0.65075212719999997" blue="0.98657888169999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="USA" backgroundImage="usa">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="2Ut-4h-7dt" kind="show" id="pA9-PN-IGn"/>
@@ -268,6 +270,11 @@
                                     <action selector="musicswitch:" destination="lCY-v2-Mnj" eventType="valueChanged" id="NWd-Ho-2eD"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGd-dJ-OlK">
+                                <rect key="frame" x="193" y="364" width="139" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="England" backgroundImage="england"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="w3p-Sc-RMf"/>
@@ -275,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8x-N5-xzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="54"/>
+            <point key="canvasLocation" x="896.79999999999995" y="53.523238380809602"/>
         </scene>
         <!--Scene1 View Controller-->
         <scene sceneID="kg7-4e-h42">
@@ -585,7 +592,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hq-Js-P8m">
-                                <rect key="frame" x="95" y="482" width="83" height="93"/>
+                                <rect key="frame" x="95" y="486" width="83" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="cow"/>
                             </button>
@@ -772,10 +779,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Korea" translatesAutoresizingMaskIntoConstraints="NO" id="LHZ-y1-BPV">
-                                <rect key="frame" x="268" y="13" width="91" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQa-JU-5M8">
                                 <rect key="frame" x="16" y="148" width="352" height="321"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -799,13 +802,6 @@
                                     <action selector="backL:" destination="oDa-8F-y2D" eventType="touchUpInside" id="WT7-jW-wO3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seoul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQl-f9-KIl">
-                                <rect key="frame" x="291" y="26" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jju-dS-SUz"/>
@@ -827,11 +823,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUZ-B3-Nbj">
-                                <rect key="frame" x="199" y="263" width="98" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="arrow1"/>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dark" translatesAutoresizingMaskIntoConstraints="NO" id="GIp-kT-dk0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plk-cF-cYL">
                                 <rect key="frame" x="275" y="37" width="9" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -846,6 +841,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUZ-B3-Nbj">
+                                <rect key="frame" x="205" y="361" width="82" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Button" image="arrow1"/>
+                                <connections>
+                                    <segue destination="Jb6-pP-Vvb" kind="show" id="Skx-iZ-vqI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MNX-zP-fdC"/>
@@ -853,7 +856,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmK-WP-fXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="1629"/>
+            <point key="canvasLocation" x="1621.5999999999999" y="1631.3343328335834"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j2E-sG-0nP">
+            <objects>
+                <viewController id="zzm-nQ-s2d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aq1-wh-tmw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="this" translatesAutoresizingMaskIntoConstraints="NO" id="bM5-tC-C2L">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6y-vx-kCF">
+                                <rect key="frame" x="139" y="483" width="97" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrowd"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nv4-1F-ft5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2r-h8-eoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664.8" y="2376.1619190404799"/>
+        </scene>
+        <!--Second Game2 View Controller-->
+        <scene sceneID="0xW-xV-uQl">
+            <objects>
+                <viewController id="Jb6-pP-Vvb" customClass="SecondGame2ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EFP-qB-nn5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thisn" translatesAutoresizingMaskIntoConstraints="NO" id="40L-ny-TAn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-5f-KV5">
+                                <rect key="frame" x="277" y="498" width="82" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrowup"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Sp-3H-AoK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3I-mq-akN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2338.4000000000001" y="1631.3343328335834"/>
         </scene>
         <!--Scene2 View Controller-->
         <scene sceneID="F2T-4O-xCp">
@@ -919,22 +974,27 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Korea" width="1200" height="800"/>
         <image name="Netherlands" width="1000" height="667"/>
         <image name="arrow1" width="1152" height="537"/>
         <image name="arrowd" width="537" height="1152"/>
+        <image name="arrowup" width="537" height="1152"/>
         <image name="bg1" width="604" height="1074"/>
         <image name="bg1b" width="650" height="650"/>
         <image name="bg2" width="600" height="791"/>
-        <image name="bg3" width="348" height="450"/>
+        <image name="bg3" width="211" height="312"/>
         <image name="cow" width="2121" height="2400"/>
+        <image name="dark" width="900" height="638"/>
+        <image name="england" width="1200" height="600"/>
         <image name="greendoor" width="1000" height="925"/>
         <image name="hl1" width="427" height="536"/>
         <image name="hlppl" width="512" height="512"/>
         <image name="hollandscene" width="369" height="340"/>
         <image name="italy" width="450" height="300"/>
         <image name="logoprj" width="460" height="265"/>
+        <image name="this" width="163" height="335"/>
+        <image name="thisn" width="485" height="504"/>
         <image name="tulip" width="280" height="412"/>
         <image name="tulip2" width="430" height="551"/>
+        <image name="usa" width="450" height="237"/>
     </resources>
 </document>
