@@ -32,10 +32,10 @@ class LoginViewController: UIViewController {
         {
             username = acc.text!
             
-            let alertController = UIAlertController(title: "Username", message: "Please fill up your username",
+            let alertController = UIAlertController(title: "Username", message: "Please create your username",
                                                     preferredStyle: .alert)
     
-            // Prepare the segue before passing data
+            // Prepare Alert message before passing data
             let yesAction = UIAlertAction(title: "Ok", style: .default) {(action) -> Void in print ("IT CANNOT BE EMPTY")}
             
             
@@ -49,13 +49,19 @@ class LoginViewController: UIViewController {
         {
             username = acc.text!
             
-            
-            let alertController = UIAlertController(title: "Click Next to start game", message: "You have successfully saved your username!",
+
+            let alertController = UIAlertController(title: "Click Next to the Level page", message: "You have successfully saved your username!",
                                                     preferredStyle: .alert)
             
-            // Prepare the segue before passing data
+
+
+            
+  // Allow data passing through the storyboard identifier
+// Click Alert message - "Ok" and  Button - "Next" before move into the Level ViewController
+            
             let yesAction = UIAlertAction(title: "Ok", style: .default) {(action) -> Void in
-                self.performSegue(withIdentifier: "segue1", sender: self)
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "LV") as! LevelViewController;
+                self.present(vc, animated: true, completion: nil)
             }
             
             // Operates Warning Alert: Username is blank
@@ -66,11 +72,7 @@ class LoginViewController: UIViewController {
         
     }
     
- // Move to Level ViewController by using identifier in main storyboard
-    @IBAction func level(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LV") as! LevelViewController;
-        self.present(vc, animated: true, completion: nil)
-    }
+
     
     // Connected to the Parents ViewController: Back to Menu - ViewController
     @IBAction func backM(_ sender: Any) {
