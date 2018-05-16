@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5917D2FC20AC55E100EF31CE /* projectdata1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5917D2FB20AC55DF00EF31CE /* projectdata1.txt */; };
 		597F09BC20A5CB45001597A0 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F09BB20A5CB45001597A0 /* Gif.swift */; };
 		597F09BE20A5CEDA001597A0 /* try.gif in Resources */ = {isa = PBXBuildFile; fileRef = 597F09BD20A5CECE001597A0 /* try.gif */; };
 		597F09C020A6E930001597A0 /* Music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 597F09BF20A6E930001597A0 /* Music1.mp3 */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5917D2FB20AC55DF00EF31CE /* projectdata1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projectdata1.txt; sourceTree = "<group>"; };
 		597F09BB20A5CB45001597A0 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		597F09BD20A5CECE001597A0 /* try.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = try.gif; sourceTree = "<group>"; };
 		597F09BF20A6E930001597A0 /* Music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music1.mp3; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				59C81A1E20A49BCF00D8FE49 /* Project2.xcdatamodeld */,
 				597F09BF20A6E930001597A0 /* Music1.mp3 */,
 				597F09BD20A5CECE001597A0 /* try.gif */,
+				5917D2FB20AC55DF00EF31CE /* projectdata1.txt */,
 			);
 			path = Project2;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5917D2FC20AC55E100EF31CE /* projectdata1.txt in Resources */,
 				597F09BE20A5CEDA001597A0 /* try.gif in Resources */,
 				59C81A2520A49BD200D8FE49 /* LaunchScreen.storyboard in Resources */,
 				597F09C020A6E930001597A0 /* Music1.mp3 in Resources */,

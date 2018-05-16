@@ -15,7 +15,7 @@ class Scene1ViewController: UIViewController {
     @IBOutlet weak var nextB: UIButton!
     
     
-    let scene1 = "Wow I have finally arrived to this beautiful land in Holland. \nThis will be an amazing jounery, I can't wait to exploring things. \nHopefully, this jounery will be full of excited experience but it is a happy trip if I will be meeting the good people surronding me... \nNow! Let me take a look at what's up there!!"
+  
     
     
     
@@ -23,13 +23,58 @@ class Scene1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        FirstScene.alpha = 0
+        //Set up a file path through DocumentDirURL path and file text type
+        
+        let fileName = "Test"
+        let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        let fileURL = DocumentDirURL.appendingPathComponent(fileName).appendingPathExtension("txt")
+        
+        print("File Path \(fileURL.path)")
+        
+        //Try to write the created file from fileURL
+        
+        let writeString = "Write this text to the file in Swift"
+        do {
+                // Write to the file
+            try writeString.write(to: fileURL, atomically: true, encoding: String.Encoding.utf8)
+        
+            // Print out "error" messages when failing to write the created file
+        } catch let error as NSError {
+            print("failed to write to URL")
+            print(error)
+        }
+        
+        
+        //Read the created file
+        //Varabile - Store the file contents we read from
+        var readString = ""
+        
+        do {
+            readString = try String(contentsOf: fileURL)
+        } catch let error as NSError {
+            print("Failed to read file")
+            print(error)
+        }
+        
+        print("Contents of the file \(readString)")
+        
+        //Read the text file
+        let fileURLProject = Bundle.main.path(forResource: "projectdata1", ofType: "txt")
+
+        //Varabile
+        var readStringProject = ""
+        do
+        {
+            readStringProject = try String(contentsOfFile: fileURLProject!, encoding: String.Encoding.utf8)
+            
+        } catch let error as NSError {
+            print("Failed to read from project")
+            print(error)
+        }
+        print (readStringProject)
+
         backB.alpha = 0
         nextB.alpha = 0
-        
-        
-        
-        startingscene()
         // Do any additional setup after loading the view.
     }
     
@@ -70,13 +115,6 @@ class Scene1ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func startingscene() {
-        
-        FirstScene.text = self.scene1
-        
-        
     }
     
 
