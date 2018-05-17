@@ -14,7 +14,7 @@ class Scene1ViewController: UIViewController {
     @IBOutlet weak var backB: UIButton!
     @IBOutlet weak var nextB: UIButton!
     
-    
+    let scence1 = ""
   
     
     
@@ -72,9 +72,12 @@ class Scene1ViewController: UIViewController {
             print(error)
         }
         print (readStringProject)
-
+        
+        FirstScene.alpha = 0
         backB.alpha = 0
         nextB.alpha = 0
+        
+        startingscene()
         // Do any additional setup after loading the view.
     }
     
@@ -109,7 +112,12 @@ class Scene1ViewController: UIViewController {
         })
     }
     
-    
+    func startingscene() {
+        
+        FirstScene.text = self.scence1
+        
+        
+    }
     
     
     override func didReceiveMemoryWarning() {
