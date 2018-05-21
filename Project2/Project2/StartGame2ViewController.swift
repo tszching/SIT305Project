@@ -39,6 +39,7 @@ class StartGame2ViewController: UIViewController {
         
         
         
+        
         // Do any additional setup after loading the view.
     }
     
@@ -68,10 +69,41 @@ class StartGame2ViewController: UIViewController {
         
     }
     
-   
+   // All outlets
     @IBOutlet weak var GifView: UIImageView!
+    @IBOutlet weak var Attack1: UIButton!
+    @IBOutlet weak var Ignore1: UIButton!
+    @IBOutlet weak var downbutton: UIButton!
+    
+    
+    
+    
+    @IBAction func Attack1(_ sender: Any) {
+            Attack1.isHidden = true
+        if (Attack1.isHidden == true) {
+            GifView.isHidden = true
+            Ignore1.isHidden = true
+            downbutton.isHidden = false
+        }
+    }
+ 
+    @IBAction func Ignore1(_ sender: Any) {
+            Ignore1.isHidden = true
+        if (Ignore1.isHidden == true) {
+            GifView.isHidden = true
+            Attack1.isHidden = true
+            downbutton.isHidden = false
+        }
+    }
+   
+
+    
+    
+    
     @IBAction func Game5(_ sender: Any) {
+        
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG5") as! StartGame5ViewController; self.present(vc, animated: true, completion: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {

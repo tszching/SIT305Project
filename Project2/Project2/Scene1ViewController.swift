@@ -14,6 +14,19 @@ class Scene1ViewController: UIViewController {
     @IBOutlet weak var data: UILabel!
     
     
+    // Connected to the Parents ViewController: Back to Level ViewController
+    @IBAction func backtoL(_ sender: Any) {
+        
+        dismiss (animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    @IBAction func toGame1(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG") as! StartGameViewController; self.present(vc, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
