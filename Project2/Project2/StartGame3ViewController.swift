@@ -10,8 +10,15 @@ import UIKit
 
 class StartGame3ViewController: UIViewController {
 
+    @IBOutlet weak var lblScore: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let delegate = UIApplication.shared.delegate as? AppDelegate{
+            if delegate.score != 0 {
+                lblScore.text = String(delegate.score!)
+            }
+        }
 
         //loading all Gif images
         GifView.loadGif(name: "try")

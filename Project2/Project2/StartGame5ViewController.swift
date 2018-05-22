@@ -13,7 +13,16 @@ class StartGame5ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if stateLevel1.ppl {
+            ppl.isHidden = true
+        }
+        if stateLevel1.windmill {
+            windmill.isHidden = true
+        }
+        
+        if stateLevel1.ppl, stateLevel1.windmill {
+            upbtn.isHidden = false
+        }
     }
 
  
@@ -24,15 +33,25 @@ class StartGame5ViewController: UIViewController {
     
     
     @IBAction func ppl(_ sender: UIButton) {
+        if let delegate = UIApplication.shared.delegate as? AppDelegate, !ppl.isHidden {
+            delegate.score = delegate.score! + 10
+        }
         ppl.isHidden = true
+        stateLevel1.ppl = true
         if (ppl.isHidden == true && windmill.isHidden == true)
         {
+        
             upbtn.isHidden = false
+            
         }
   
     }
     @IBAction func windmill(_ sender: UIButton) {
+        if let delegate = UIApplication.shared.delegate as? AppDelegate, !windmill.isHidden {
+            delegate.score = delegate.score! + 10
+        }
         windmill.isHidden = true
+        stateLevel1.windmill = true
         if (windmill.isHidden == true && ppl.isHidden == true)
         {
             upbtn.isHidden = false
@@ -41,7 +60,8 @@ class StartGame5ViewController: UIViewController {
        
     }
     
-  
+      //  Let this button identify the storyboard ID and move to the StartGame2viewcontroller screen
+    
     @IBAction func bkGame2(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG2") as! StartGame2ViewController
         self.present(vc, animated: true,completion: nil)

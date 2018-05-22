@@ -19,16 +19,23 @@ class SettingViewController: UIViewController {
     // Do any additional setup after loading the view.
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //The file URL
+        
         let path = Bundle.main.path(forResource: "Music1", ofType:"mp3")
         let url = URL(fileURLWithPath: path!)
         
+        //set up the player
         do
         {
             try soundPlayer = AVAudioPlayer(contentsOf: url)
         }
+        //catch error if playback fails
         catch {print("file not availale")}
         
     }
+    
+// Connected to the Parents ViewController: Back to Menu - ViewController
     
     @IBAction func backing(_ sender: Any) {
         dismiss(animated: true, completion: nil)

@@ -10,6 +10,7 @@ import UIKit
 
 class StartGame2ViewController: UIViewController {
 
+    @IBOutlet weak var lblScore: UILabel!
     
     // Variables
     var gameTimer : Timer?
@@ -19,6 +20,12 @@ class StartGame2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let delegate = UIApplication.shared.delegate as? AppDelegate{
+            if delegate.score != 0 {
+                lblScore.text = String(delegate.score!)
+            }
+        }
         
         // Set timer to show snowflaks
         gameTimer = Timer.scheduledTimer(timeInterval: 1,
@@ -97,7 +104,7 @@ class StartGame2ViewController: UIViewController {
    
 
     
-    
+//  Let this button identify the storyboard ID and move to the StartGame5viewcontroller screen
     
     @IBAction func Game5(_ sender: Any) {
         

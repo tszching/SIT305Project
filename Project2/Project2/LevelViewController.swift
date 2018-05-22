@@ -21,29 +21,42 @@ class LevelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // The file URL
+        
         let path = Bundle.main.path(forResource: "Music1", ofType:"mp3")
         let url = URL(fileURLWithPath: path!)
         
+        //Set up the player
         do
         {
             try soundPlayer = AVAudioPlayer(contentsOf: url)
         }
+        
+            //catch the error if playback fails
         catch {print("file not availale")}
         
     }
     
-    
+    // All Outlets
     @IBOutlet weak var userlbl: UILabel!
     @IBOutlet weak var toItaly: UIButton!
     
+    // All Functions
     @IBAction func toItaly(_ sender: Any) {
        
-        toItaly.setTitleColor(UIColor.gray, for: .disabled)
     }
     
     // Show the saved username from Login ViewController
     override func viewDidAppear(_ animated: Bool)
-    {  userlbl.text = username
+    {
+        // Disable the button until user Score up to 40 
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            userlbl.text = delegate.userName
+            if getHighScore(name: delegate.userName!) >= 40 {
+                toItaly.isEnabled = true
+            }
+        }
     }
     
     /// Switching music player

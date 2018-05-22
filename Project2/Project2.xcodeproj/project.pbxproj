@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A45937F20B407FF00E32653 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A45937E20B407FF00E32653 /* Data.json */; };
+		0A45938120B4089400E32653 /* JsonDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A45938020B4089400E32653 /* JsonDataHandler.swift */; };
+		0A45938320B4693B00E32653 /* ObjectStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A45938220B4693B00E32653 /* ObjectStates.swift */; };
 		5917D2FC20AC55E100EF31CE /* projectdata1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5917D2FB20AC55DF00EF31CE /* projectdata1.txt */; };
 		591CBB0D20B3263600E0F901 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591CBB0C20B3263600E0F901 /* GameOverViewController.swift */; };
 		597F09BC20A5CB45001597A0 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F09BB20A5CB45001597A0 /* Gif.swift */; };
@@ -57,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A45937E20B407FF00E32653 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		0A45938020B4089400E32653 /* JsonDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataHandler.swift; sourceTree = "<group>"; };
+		0A45938220B4693B00E32653 /* ObjectStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStates.swift; sourceTree = "<group>"; };
 		5917D2FB20AC55DF00EF31CE /* projectdata1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projectdata1.txt; sourceTree = "<group>"; };
 		591CBB0C20B3263600E0F901 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		597F09BB20A5CB45001597A0 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
@@ -172,6 +178,9 @@
 				597F09BF20A6E930001597A0 /* Music1.mp3 */,
 				597F09BD20A5CECE001597A0 /* try.gif */,
 				5917D2FB20AC55DF00EF31CE /* projectdata1.txt */,
+				0A45937E20B407FF00E32653 /* Data.json */,
+				0A45938020B4089400E32653 /* JsonDataHandler.swift */,
+				0A45938220B4693B00E32653 /* ObjectStates.swift */,
 			);
 			path = Project2;
 			sourceTree = "<group>";
@@ -302,6 +311,7 @@
 				597F09BE20A5CEDA001597A0 /* try.gif in Resources */,
 				59C81A2520A49BD200D8FE49 /* LaunchScreen.storyboard in Resources */,
 				597F09C020A6E930001597A0 /* Music1.mp3 in Resources */,
+				0A45937F20B407FF00E32653 /* Data.json in Resources */,
 				59C81A2220A49BD200D8FE49 /* Assets.xcassets in Resources */,
 				59C81A1D20A49BCF00D8FE49 /* Main.storyboard in Resources */,
 			);
@@ -328,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A45938120B4089400E32653 /* JsonDataHandler.swift in Sources */,
 				59AE585C20B3F00D00D261F4 /* ScoreTableViewController.swift in Sources */,
 				59C81A4B20A4AFB400D8FE49 /* LoginViewController.swift in Sources */,
 				59C81A1A20A49BCF00D8FE49 /* ViewController.swift in Sources */,
@@ -343,6 +354,7 @@
 				591CBB0D20B3263600E0F901 /* GameOverViewController.swift in Sources */,
 				59C81A6D20A4B24600D8FE49 /* ThirdGameViewController.swift in Sources */,
 				59C81A6B20A4B22A00D8FE49 /* SecondGame2ViewController.swift in Sources */,
+				0A45938320B4693B00E32653 /* ObjectStates.swift in Sources */,
 				59C81A4D20A4B01400D8FE49 /* AboutViewController.swift in Sources */,
 				597F09BC20A5CB45001597A0 /* Gif.swift in Sources */,
 				59C81A2020A49BCF00D8FE49 /* Project2.xcdatamodeld in Sources */,

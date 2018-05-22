@@ -12,14 +12,29 @@ import UIKit
 class StartGameViewController: UIViewController {
 
     @IBOutlet weak var flower: UIButton!
+    @IBOutlet weak var lblScore: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if stateLevel1.flower {
+            flower.isHidden = true
+        }
+        if let delegate = UIApplication.shared.delegate as? AppDelegate{
+            if delegate.score != 0 {
+                lblScore.text = String(delegate.score!)
+            }
+        }
     }
     @IBAction func flower(_ sender: UIButton) {
         flower.isHidden = true
+        stateLevel1.flower = true
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            delegate.score = delegate.score! + 10
+            lblScore.text = String(delegate.score!)
+        }
     }
+    
+//  Let this button identify the storyboard ID and move to the  StartGame2viewcontroller screen
     @IBAction func Game2(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG2") as! StartGame2ViewController
         self.present(vc, animated: true,completion: nil)

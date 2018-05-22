@@ -14,10 +14,15 @@ class GameOverViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        writeScore(name: delegate.userName!, score: delegate.score!)
     }
-
     
     @IBAction func backtoL(_ sender: Any) {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        // init variables again
+        delegate.score = 0
+        stateLevel1 = StateLevel1(flower: false, cow: false, ppl: false, windmill: false)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "LV") as! LevelViewController;
         self.present(vc, animated: true, completion: nil)
     }

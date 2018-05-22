@@ -15,12 +15,18 @@ class StartGame4ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if stateLevel1.cow {
+            cow.isHidden = true
+        }
     }
     @IBOutlet weak var cow: UIButton!
     @IBAction func cow(_ sender: Any) {
     
         cow.isHidden = true
+        stateLevel1.cow = true
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            delegate.score = delegate.score! + 10
+        }
     }
     
     

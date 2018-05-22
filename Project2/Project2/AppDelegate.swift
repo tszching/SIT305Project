@@ -12,6 +12,9 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var userName: String?
+    var score: Int?
+    
     var window: UIWindow?
 
 

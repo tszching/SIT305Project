@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
     //All Outlets
     @IBOutlet weak var acc: UITextField!
     
+    //All functions
     @IBAction func savedata(_ sender: AnyObject) {
 
         // Displaying an Alert Popup Window (Login failed) if username is empty
@@ -42,34 +43,18 @@ class LoginViewController: UIViewController {
         // Operates Warning Alert: Username is blank
             alertController.addAction(yesAction)
             self.present(alertController, animated: true, completion: nil)
-        }
-        
-    // Displaying an Alert Popup Window (successful login) if username is not empty
-        if (acc.text != "")
-        {
+        } else {
             username = acc.text!
             
-
-            let alertController = UIAlertController(title: "Click Next to the Level page", message: "You have successfully saved your username!",
-                                                    preferredStyle: .alert)
-            
-
-
-            
-  // Allow data passing through the storyboard identifier
-// Click Alert message - "Ok" and  Button - "Next" before move into the Level ViewController
-            
-            let yesAction = UIAlertAction(title: "Ok", style: .default) {(action) -> Void in
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "LV") as! LevelViewController;
-                self.present(vc, animated: true, completion: nil)
+            if let delegate = UIApplication.shared.delegate as? AppDelegate {
+                delegate.userName = username
+                delegate.score = 0
             }
             
-            // Operates Warning Alert: Username is blank
-            
-            alertController.addAction(yesAction)
-            self.present(alertController, animated: true, completion: nil)
-        }
         
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LV") as! LevelViewController;
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
 
