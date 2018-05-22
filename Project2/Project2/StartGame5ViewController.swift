@@ -20,15 +20,32 @@ class StartGame5ViewController: UIViewController {
     @IBOutlet weak var ppl: UIButton!
     @IBOutlet weak var windmill: UIButton!
     
+    @IBOutlet weak var upbtn: UIButton!
     
     
     @IBAction func ppl(_ sender: UIButton) {
         ppl.isHidden = true
+        if (ppl.isHidden == true && windmill.isHidden == true)
+        {
+            upbtn.isHidden = false
+        }
+  
     }
     @IBAction func windmill(_ sender: UIButton) {
         windmill.isHidden = true
+        if (windmill.isHidden == true && ppl.isHidden == true)
+        {
+            upbtn.isHidden = false
+        }
+        
+       
     }
     
+  
+    @IBAction func bkGame2(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG2") as! StartGame2ViewController
+        self.present(vc, animated: true,completion: nil)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

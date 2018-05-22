@@ -15,6 +15,7 @@ class StartGame2ViewController: UIViewController {
     var gameTimer : Timer?
     var gravity : UIGravityBehavior?
     var animator : UIDynamicAnimator?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +76,7 @@ class StartGame2ViewController: UIViewController {
     @IBOutlet weak var Ignore1: UIButton!
     @IBOutlet weak var downbutton: UIButton!
     
+    @IBOutlet weak var leftbutton: UIButton!
     
     
     
@@ -84,16 +86,13 @@ class StartGame2ViewController: UIViewController {
             GifView.isHidden = true
             Ignore1.isHidden = true
             downbutton.isHidden = false
+            leftbutton.isHidden = false
         }
+        
     }
  
     @IBAction func Ignore1(_ sender: Any) {
-            Ignore1.isHidden = true
-        if (Ignore1.isHidden == true) {
-            GifView.isHidden = true
-            Attack1.isHidden = true
-            downbutton.isHidden = false
-        }
+ 
     }
    
 

@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class StartGame4ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,7 +17,13 @@ class StartGame4ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    @IBOutlet weak var cow: UIButton!
+    @IBAction func cow(_ sender: Any) {
+    
+        cow.isHidden = true
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

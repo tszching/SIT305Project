@@ -1,30 +1,28 @@
 //
-//  StartGameViewController.swift
+//  GameOverViewController.swift
 //  Project2
 //
-//  Created by DARKEUNG on 11/5/2018.
+//  Created by DARKEUNG on 22/5/2018.
 //  Copyright © 2018 DARKEUNG. All rights reserved.
 //
 
 import UIKit
 
+class GameOverViewController: UIViewController {
 
-class StartGameViewController: UIViewController {
-
-    @IBOutlet weak var flower: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
-    @IBAction func flower(_ sender: UIButton) {
-        flower.isHidden = true
-    }
-    @IBAction func Game2(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG2") as! StartGame2ViewController
-        self.present(vc, animated: true,completion: nil)
+
+        // Do any additional setup after loading the view.
     }
 
+    
+    @IBAction func backtoL(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LV") as! LevelViewController;
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

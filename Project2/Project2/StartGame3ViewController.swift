@@ -20,7 +20,35 @@ class StartGame3ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+ 
+    // All outlets
     @IBOutlet weak var GifView: UIImageView!
+    @IBOutlet weak var Attack1: UIButton!
+    @IBOutlet weak var Ignore1: UIButton!
+
+    @IBOutlet weak var upbutton: UIButton!
+    
+    @IBOutlet weak var rightbutton: UIButton!
+  
+    
+    
+    
+    @IBAction func Attack1(_ sender: Any) {
+        Attack1.isHidden = true
+        if (Attack1.isHidden == true) {
+            GifView.isHidden = true
+            Ignore1.isHidden = true
+            upbutton.isHidden = false
+            rightbutton.isHidden = false
+            
+        }
+        
+    }
+    
+    @IBAction func Ignore1(_ sender: Any) {
+        
+    }
+    
     @IBAction func Game4(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG4") as! StartGame4ViewController; self.present(vc, animated: true,completion: nil)
     }

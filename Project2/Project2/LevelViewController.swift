@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+
 class LevelViewController: UIViewController {
     
     // Variables
@@ -33,6 +34,12 @@ class LevelViewController: UIViewController {
     
     
     @IBOutlet weak var userlbl: UILabel!
+    @IBOutlet weak var toItaly: UIButton!
+    
+    @IBAction func toItaly(_ sender: Any) {
+       
+        toItaly.setTitleColor(UIColor.gray, for: .disabled)
+    }
     
     // Show the saved username from Login ViewController
     override func viewDidAppear(_ animated: Bool)
