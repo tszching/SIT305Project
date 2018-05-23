@@ -1,40 +1,43 @@
 //
-//  SecondGameViewController.swift
+//  SecondGame3ViewController.swift
 //  Project2
 //
-//  Created by DARKEUNG on 11/5/2018.
+//  Created by DARKEUNG on 23/5/2018.
 //  Copyright © 2018 DARKEUNG. All rights reserved.
 //
 
 import UIKit
 
-class SecondGameViewController: UIViewController {
+class SecondGame3ViewController: UIViewController {
 
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if delegate.score != 0 {
+            lblScore.text = String(delegate.score!)
+        }
     }
+
     @IBOutlet weak var lblScore: UILabel!
     
-    @IBOutlet weak var rightBtn: UIButton!
-    @IBOutlet weak var wine: UIButton!
+    @IBOutlet weak var logo: UIButton!
     
-    // Click the right answer then it will be hidden
-    @IBAction func rightAnswerClick(_ sender: Any) {
-        rightBtn.isHidden = false
+    @IBOutlet weak var downBtn: UIButton!
+    
+    // Click logo object method
+    @IBAction func logoClick(_ sender: Any) {
         
-    }
-    //Adding Score 
-    @IBAction func wine(_ sender: Any) {
-        wine.isHidden = true
-        stateLevel2.wine = true
-        
+        // Score update
         delegate.score = delegate.score! + 10
+        lblScore.text = String(delegate.score!)
+        
+        logo.isHidden = true
+        stateLevel2.logo = true
+        
+        downBtn.isHidden = false
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

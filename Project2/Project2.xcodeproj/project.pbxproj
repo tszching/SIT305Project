@@ -40,6 +40,12 @@
 		59C81A6B20A4B22A00D8FE49 /* SecondGame2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A6A20A4B22A00D8FE49 /* SecondGame2ViewController.swift */; };
 		59C81A6D20A4B24600D8FE49 /* ThirdGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A6C20A4B24600D8FE49 /* ThirdGameViewController.swift */; };
 		59C81A6F20A4B25700D8FE49 /* ThirdGame2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81A6E20A4B25700D8FE49 /* ThirdGame2ViewController.swift */; };
+		59E6A16420B508F300F86FEA /* SecondGame3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6A16320B508F300F86FEA /* SecondGame3ViewController.swift */; };
+		59E6A16620B5092200F86FEA /* SecondGame4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6A16520B5092200F86FEA /* SecondGame4ViewController.swift */; };
+		59E6A16820B5127800F86FEA /* projectdata2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 59E6A16720B5127700F86FEA /* projectdata2.txt */; };
+		59E6A16A20B53C8000F86FEA /* tourguy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 59E6A16920B53C8000F86FEA /* tourguy.gif */; };
+		59E6A16C20B53FBC00F86FEA /* ThirdGame3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6A16B20B53FBC00F86FEA /* ThirdGame3ViewController.swift */; };
+		59E6A16E20B53FD700F86FEA /* ThirdGame4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6A16D20B53FD700F86FEA /* ThirdGame4ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +105,12 @@
 		59C81A6A20A4B22A00D8FE49 /* SecondGame2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGame2ViewController.swift; sourceTree = "<group>"; };
 		59C81A6C20A4B24600D8FE49 /* ThirdGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdGameViewController.swift; sourceTree = "<group>"; };
 		59C81A6E20A4B25700D8FE49 /* ThirdGame2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdGame2ViewController.swift; sourceTree = "<group>"; };
+		59E6A16320B508F300F86FEA /* SecondGame3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGame3ViewController.swift; sourceTree = "<group>"; };
+		59E6A16520B5092200F86FEA /* SecondGame4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGame4ViewController.swift; sourceTree = "<group>"; };
+		59E6A16720B5127700F86FEA /* projectdata2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projectdata2.txt; sourceTree = "<group>"; };
+		59E6A16920B53C8000F86FEA /* tourguy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tourguy.gif; sourceTree = "<group>"; };
+		59E6A16B20B53FBC00F86FEA /* ThirdGame3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdGame3ViewController.swift; sourceTree = "<group>"; };
+		59E6A16D20B53FD700F86FEA /* ThirdGame4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdGame4ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +170,12 @@
 				59C81A6620A4B1D400D8FE49 /* StartGame5ViewController.swift */,
 				59C81A6820A4B20B00D8FE49 /* SecondGameViewController.swift */,
 				59C81A6A20A4B22A00D8FE49 /* SecondGame2ViewController.swift */,
+				59E6A16320B508F300F86FEA /* SecondGame3ViewController.swift */,
+				59E6A16520B5092200F86FEA /* SecondGame4ViewController.swift */,
 				59C81A6C20A4B24600D8FE49 /* ThirdGameViewController.swift */,
 				59C81A6E20A4B25700D8FE49 /* ThirdGame2ViewController.swift */,
+				59E6A16B20B53FBC00F86FEA /* ThirdGame3ViewController.swift */,
+				59E6A16D20B53FD700F86FEA /* ThirdGame4ViewController.swift */,
 				59C81A1720A49BCF00D8FE49 /* AppDelegate.swift */,
 				59C81A1920A49BCF00D8FE49 /* ViewController.swift */,
 				59C81A1B20A49BCF00D8FE49 /* Main.storyboard */,
@@ -177,7 +193,9 @@
 				59C81A1E20A49BCF00D8FE49 /* Project2.xcdatamodeld */,
 				597F09BF20A6E930001597A0 /* Music1.mp3 */,
 				597F09BD20A5CECE001597A0 /* try.gif */,
+				59E6A16920B53C8000F86FEA /* tourguy.gif */,
 				5917D2FB20AC55DF00EF31CE /* projectdata1.txt */,
+				59E6A16720B5127700F86FEA /* projectdata2.txt */,
 				0A45937E20B407FF00E32653 /* Data.json */,
 				0A45938020B4089400E32653 /* JsonDataHandler.swift */,
 				0A45938220B4693B00E32653 /* ObjectStates.swift */,
@@ -308,12 +326,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5917D2FC20AC55E100EF31CE /* projectdata1.txt in Resources */,
+				59E6A16820B5127800F86FEA /* projectdata2.txt in Resources */,
 				597F09BE20A5CEDA001597A0 /* try.gif in Resources */,
 				59C81A2520A49BD200D8FE49 /* LaunchScreen.storyboard in Resources */,
 				597F09C020A6E930001597A0 /* Music1.mp3 in Resources */,
 				0A45937F20B407FF00E32653 /* Data.json in Resources */,
 				59C81A2220A49BD200D8FE49 /* Assets.xcassets in Resources */,
 				59C81A1D20A49BCF00D8FE49 /* Main.storyboard in Resources */,
+				59E6A16A20B53C8000F86FEA /* tourguy.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +365,10 @@
 				59C81A1820A49BCF00D8FE49 /* AppDelegate.swift in Sources */,
 				59C81A6720A4B1D400D8FE49 /* StartGame5ViewController.swift in Sources */,
 				59C81A5320A4B09500D8FE49 /* Scene1ViewController.swift in Sources */,
+				59E6A16620B5092200F86FEA /* SecondGame4ViewController.swift in Sources */,
 				59C81A5120A4B07D00D8FE49 /* LevelViewController.swift in Sources */,
 				59C81A5520A4B0A500D8FE49 /* Scene2ViewController.swift in Sources */,
+				59E6A16C20B53FBC00F86FEA /* ThirdGame3ViewController.swift in Sources */,
 				59C81A6520A4B1C600D8FE49 /* StartGame4ViewController.swift in Sources */,
 				59C81A6120A4B1AE00D8FE49 /* StartGame2ViewController.swift in Sources */,
 				59C81A5F20A4B19300D8FE49 /* StartGameViewController.swift in Sources */,
@@ -356,6 +378,8 @@
 				59C81A6B20A4B22A00D8FE49 /* SecondGame2ViewController.swift in Sources */,
 				0A45938320B4693B00E32653 /* ObjectStates.swift in Sources */,
 				59C81A4D20A4B01400D8FE49 /* AboutViewController.swift in Sources */,
+				59E6A16420B508F300F86FEA /* SecondGame3ViewController.swift in Sources */,
+				59E6A16E20B53FD700F86FEA /* ThirdGame4ViewController.swift in Sources */,
 				597F09BC20A5CB45001597A0 /* Gif.swift in Sources */,
 				59C81A2020A49BCF00D8FE49 /* Project2.xcdatamodeld in Sources */,
 				59C81A4F20A4B03E00D8FE49 /* SettingViewController.swift in Sources */,

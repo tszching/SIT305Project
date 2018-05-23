@@ -10,8 +10,20 @@ import UIKit
 
 class StartGame5ViewController: UIViewController {
 
+    //All outlets
+    @IBOutlet weak var lblScore: UILabel!
+    @IBOutlet weak var ppl: UIButton!
+    @IBOutlet weak var windmill: UIButton!
+    @IBOutlet weak var upbtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let delegate = UIApplication.shared.delegate as? AppDelegate{
+            if delegate.score != 0 {
+                lblScore.text = String(delegate.score!)
+            }
+        }
 
         if stateLevel1.ppl {
             ppl.isHidden = true
@@ -24,17 +36,11 @@ class StartGame5ViewController: UIViewController {
             upbtn.isHidden = false
         }
     }
-
- 
-    @IBOutlet weak var ppl: UIButton!
-    @IBOutlet weak var windmill: UIButton!
-    
-    @IBOutlet weak var upbtn: UIButton!
-    
     
     @IBAction func ppl(_ sender: UIButton) {
         if let delegate = UIApplication.shared.delegate as? AppDelegate, !ppl.isHidden {
             delegate.score = delegate.score! + 10
+            lblScore.text = String(delegate.score!)
         }
         ppl.isHidden = true
         stateLevel1.ppl = true
@@ -49,6 +55,7 @@ class StartGame5ViewController: UIViewController {
     @IBAction func windmill(_ sender: UIButton) {
         if let delegate = UIApplication.shared.delegate as? AppDelegate, !windmill.isHidden {
             delegate.score = delegate.score! + 10
+            lblScore.text = String(delegate.score!)
         }
         windmill.isHidden = true
         stateLevel1.windmill = true

@@ -1,28 +1,21 @@
 //
-//  ThirdGameViewController.swift
+//  ThirdGame4ViewController.swift
 //  Project2
 //
-//  Created by DARKEUNG on 11/5/2018.
+//  Created by DARKEUNG on 23/5/2018.
 //  Copyright © 2018 DARKEUNG. All rights reserved.
 //
 
 import UIKit
 
-class ThirdGameViewController: UIViewController {
+class ThirdGame4ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Loading all gif images
-        GifView.loadGif(name: "tourguy")
-        
         // Do any additional setup after loading the view.
     }
-
-    
-    // All outlets
-    @IBOutlet weak var GifView: UIImageView!
-    @IBOutlet weak var fisherman: UIButton!
+    @IBOutlet weak var burger: UIButton!
         @IBOutlet weak var lblScore: UILabel!
     
     override func didReceiveMemoryWarning() {

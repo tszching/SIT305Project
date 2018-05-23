@@ -59,9 +59,9 @@ func writeData(data: UserInfo) {
                 history!.data[index].score = data.score
                 existUser = true
             }
-            if !existUser {
-                history?.data.append(data)
-            }
+        }
+        if !existUser {
+            history?.data.append(data)
         }
 
     }

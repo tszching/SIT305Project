@@ -41,11 +41,8 @@ class LevelViewController: UIViewController {
     // All Outlets
     @IBOutlet weak var userlbl: UILabel!
     @IBOutlet weak var toItaly: UIButton!
-    
-    // All Functions
-    @IBAction func toItaly(_ sender: Any) {
-       
-    }
+    @IBOutlet weak var toUSA: UIButton!
+    @IBOutlet weak var toEngland: UIButton!
     
     // Show the saved username from Login ViewController
     override func viewDidAppear(_ animated: Bool)
@@ -53,8 +50,11 @@ class LevelViewController: UIViewController {
         // Disable the button until user Score up to 40 
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
             userlbl.text = delegate.userName
-            if getHighScore(name: delegate.userName!) >= 40 {
+            if delegate.score! >= 40 {
                 toItaly.isEnabled = true
+            }
+            if delegate.score! >= 80 {
+                toUSA.isEnabled = true
             }
         }
     }

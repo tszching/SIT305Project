@@ -16,5 +16,16 @@ struct StateLevel1 {
     var windmill = false
 }
 
-// Init variable: Objects collected state in Level 1
+// Structure the objects have been collected or not in Level 2
+// False : Not Collected
+// True : Collected
+struct StateLevel2 {
+    var wine = false
+    var coffee = false
+    var pasta = false
+    var logo = false
+}
+
+// Init variable: Objects collected state for each Level
 var stateLevel1 = StateLevel1(flower: false, cow: false, ppl: false, windmill: false)
+var stateLevel2 = StateLevel2(wine: false, coffee: false, pasta: false, logo: false)

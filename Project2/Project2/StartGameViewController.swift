@@ -11,17 +11,26 @@ import UIKit
 
 class StartGameViewController: UIViewController {
 
+    //All Outlets
     @IBOutlet weak var flower: UIButton!
     @IBOutlet weak var lblScore: UILabel!
+    @IBOutlet weak var congratulation: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Flower button is Hidden after click once
         if stateLevel1.flower {
             flower.isHidden = true
         }
         if let delegate = UIApplication.shared.delegate as? AppDelegate{
             if delegate.score != 0 {
                 lblScore.text = String(delegate.score!)
+            }
+            
+            if delegate.score! >= 40 {
+                congratulation.isHidden = false
             }
         }
     }
@@ -31,6 +40,10 @@ class StartGameViewController: UIViewController {
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
             delegate.score = delegate.score! + 10
             lblScore.text = String(delegate.score!)
+            
+            if delegate.score! >= 40 {
+                congratulation.isHidden = false
+            }
         }
     }
     

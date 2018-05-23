@@ -39,7 +39,7 @@ class StartGame3ViewController: UIViewController {
   
     
     
-    
+    // All functions
     @IBAction func Attack1(_ sender: Any) {
         Attack1.isHidden = true
         if (Attack1.isHidden == true) {
