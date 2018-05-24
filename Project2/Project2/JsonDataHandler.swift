@@ -49,20 +49,9 @@ func writeData(data: UserInfo) {
     if history == nil {
         history = History(data: [data])
     } else {
-        var existUser = false
-        // Update or insert game history
-        for (index, userInfo) in history!.data.enumerated() {
-            
-            //Score > Pervious score then Update user's latest score
-            
-            if userInfo.userName == data.userName, userInfo.score < data.score {
-                history!.data[index].score = data.score
-                existUser = true
-            }
-        }
-        if !existUser {
-            history?.data.append(data)
-        }
+        
+        // Insert game history
+        history?.data.append(data)
 
     }
     

@@ -16,8 +16,9 @@ class AboutViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-// Connected to the Parents ViewController: Back to Menu - ViewController
+    // Function
     @IBAction func backHome(_ sender: Any) {
+        // Connected to the Parents ViewController: Back to Menu - ViewController
         dismiss(animated: true, completion: nil)
     }
     

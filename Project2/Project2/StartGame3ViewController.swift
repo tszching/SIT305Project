@@ -10,11 +10,14 @@ import UIKit
 
 class StartGame3ViewController: UIViewController {
 
-    @IBOutlet weak var lblScore: UILabel!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Get shared application
         if let delegate = UIApplication.shared.delegate as? AppDelegate{
+           
+            //Score is not 0 then display Score
             if delegate.score != 0 {
                 lblScore.text = String(delegate.score!)
             }
@@ -32,14 +35,13 @@ class StartGame3ViewController: UIViewController {
     @IBOutlet weak var GifView: UIImageView!
     @IBOutlet weak var Attack1: UIButton!
     @IBOutlet weak var Ignore1: UIButton!
-
     @IBOutlet weak var upbutton: UIButton!
-    
+    @IBOutlet weak var lblScore: UILabel!
     @IBOutlet weak var rightbutton: UIButton!
   
     
     
-    // All functions
+    //All functions
     @IBAction func Attack1(_ sender: Any) {
         Attack1.isHidden = true
         if (Attack1.isHidden == true) {
@@ -57,6 +59,8 @@ class StartGame3ViewController: UIViewController {
     }
     
     @IBAction func Game4(_ sender: Any) {
+        
+        //  Let this button identify the storyboard ID and move to the StartGame4viewcontroller screen
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG4") as! StartGame4ViewController; self.present(vc, animated: true,completion: nil)
     }
 

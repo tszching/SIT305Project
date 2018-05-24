@@ -10,37 +10,41 @@ import UIKit
 
 class SecondGame4ViewController: UIViewController {
 
+    //Get shared application
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Score is not 0 then display Score
         if delegate.score != 0 {
             lblScore.text = String(delegate.score!)
         }
     }
 
+    //All outlets
     @IBOutlet weak var lblScore: UILabel!
     @IBOutlet weak var congratulation: UIButton!
+
     
+    
+    //All functions
+    
+    // Click right answer and display next target
     @IBAction func rightAnswerClick(_ sender: Any) {
         congratulation.isHidden = false
+        
+    }
+    
+    
+    @IBAction func gameOver(_ sender: Any) {
+        //  Let this button identify the storyboard ID and move to the GameOverviewcontroller screen
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
+        self.present(vc, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

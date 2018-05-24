@@ -10,35 +10,47 @@ import UIKit
 
 class StartGame5ViewController: UIViewController {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //Get shared application
+        if let delegate = UIApplication.shared.delegate as? AppDelegate{
+           
+            //Score is not 0 then display Score
+            if delegate.score != 0 {
+                lblScore.text = String(delegate.score!)
+            }
+        }
+        //Ppl button is Hidden after click once
+        if stateLevel1.ppl {
+            ppl.isHidden = true
+        }
+        //Windmill button is Hidden after click once
+        if stateLevel1.windmill {
+            windmill.isHidden = true
+        }
+        //Up arrow button is showing after click Windmill and Ppl buttons
+        if stateLevel1.ppl, stateLevel1.windmill {
+            upbtn.isHidden = false
+        }
+    }
+    
     //All outlets
     @IBOutlet weak var lblScore: UILabel!
     @IBOutlet weak var ppl: UIButton!
     @IBOutlet weak var windmill: UIButton!
     @IBOutlet weak var upbtn: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if let delegate = UIApplication.shared.delegate as? AppDelegate{
-            if delegate.score != 0 {
-                lblScore.text = String(delegate.score!)
-            }
-        }
-
-        if stateLevel1.ppl {
-            ppl.isHidden = true
-        }
-        if stateLevel1.windmill {
-            windmill.isHidden = true
-        }
-        
-        if stateLevel1.ppl, stateLevel1.windmill {
-            upbtn.isHidden = false
-        }
-    }
     
+    //All functions
+    
+    // Click ppl object methods
     @IBAction func ppl(_ sender: UIButton) {
+        
+        //Get shared application
         if let delegate = UIApplication.shared.delegate as? AppDelegate, !ppl.isHidden {
+            
+            //Score is adding new score then display latest score
             delegate.score = delegate.score! + 10
             lblScore.text = String(delegate.score!)
         }
@@ -46,14 +58,18 @@ class StartGame5ViewController: UIViewController {
         stateLevel1.ppl = true
         if (ppl.isHidden == true && windmill.isHidden == true)
         {
-        
             upbtn.isHidden = false
-            
         }
   
     }
+    
+    
     @IBAction func windmill(_ sender: UIButton) {
+        
+        //Get shared application
         if let delegate = UIApplication.shared.delegate as? AppDelegate, !windmill.isHidden {
+            
+            //Score is adding new score then display latest score
             delegate.score = delegate.score! + 10
             lblScore.text = String(delegate.score!)
         }

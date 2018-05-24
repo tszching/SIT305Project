@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 //Global Variables
 var username = ""
 
@@ -28,11 +26,11 @@ class LoginViewController: UIViewController {
     @IBAction func savedata(_ sender: AnyObject) {
 
         // Displaying an Alert Popup Window (Login failed) if username is empty
-        
         if (acc.text == "")
         {
             username = acc.text!
             
+            //Alert message and title
             let alertController = UIAlertController(title: "Username", message: "Please create your username",
                                                     preferredStyle: .alert)
     
@@ -46,18 +44,24 @@ class LoginViewController: UIViewController {
         } else {
             username = acc.text!
             
+            // Get shared appliaction
             if let delegate = UIApplication.shared.delegate as? AppDelegate {
+                // Username
                 delegate.userName = username
+                // Score starts from 0
                 delegate.score = 0
             }
-            
-        
+
+        //  Let this button identify the storyboard ID and move to the Levelviewcontroller screen
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "LV") as! LevelViewController;
             self.present(vc, animated: true, completion: nil)
         }
     }
     
-
+    // Keyboard dismiss when touch outside the textfield
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        acc.resignFirstResponder()
+    }
     
     // Connected to the Parents ViewController: Back to Menu - ViewController
     @IBAction func backM(_ sender: Any) {

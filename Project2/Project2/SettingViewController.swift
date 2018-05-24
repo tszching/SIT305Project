@@ -35,9 +35,11 @@ class SettingViewController: UIViewController {
         
     }
     
-// Connected to the Parents ViewController: Back to Menu - ViewController
+
+    //All functions
     
     @IBAction func backing(_ sender: Any) {
+        // Connected to the Parents ViewController: Back to Menu - ViewController
         dismiss(animated: true, completion: nil)
     }
     
@@ -52,6 +54,8 @@ class SettingViewController: UIViewController {
     ///
     /// - Parameter sender:
     @IBAction func musicswitch(_ sender: UISwitch) {
+        
+        // True : Switched on
         if sender.isOn == true
         {
             if soundPlayer != nil{
@@ -60,6 +64,7 @@ class SettingViewController: UIViewController {
             
         }
         
+        // False : Switched off
         if sender.isOn == false
         {
             if soundPlayer != nil{

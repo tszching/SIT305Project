@@ -8,14 +8,7 @@
 
 import UIKit
 
-
 class StartGameViewController: UIViewController {
-
-    //All Outlets
-    @IBOutlet weak var flower: UIButton!
-    @IBOutlet weak var lblScore: UILabel!
-    @IBOutlet weak var congratulation: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,23 +17,42 @@ class StartGameViewController: UIViewController {
         if stateLevel1.flower {
             flower.isHidden = true
         }
+        
+        // Get shared application
         if let delegate = UIApplication.shared.delegate as? AppDelegate{
+            
+            //Score is not 0 then display Score
             if delegate.score != 0 {
                 lblScore.text = String(delegate.score!)
             }
-            
+            //Score is greater/equal then 40 display path to next level button
             if delegate.score! >= 40 {
                 congratulation.isHidden = false
             }
         }
     }
+    
+    //All Outlets
+    @IBOutlet weak var flower: UIButton!
+    @IBOutlet weak var lblScore: UILabel!
+    @IBOutlet weak var congratulation: UIButton!
+    
+    
+    //All Functions
+    
+    // Click flower object methods
     @IBAction func flower(_ sender: UIButton) {
+        
         flower.isHidden = true
         stateLevel1.flower = true
+        
+        //Get shared application
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            //Score is adding new score then display latest Score
             delegate.score = delegate.score! + 10
             lblScore.text = String(delegate.score!)
             
+            //Score is greater/equal then 40 display path to next level button
             if delegate.score! >= 40 {
                 congratulation.isHidden = false
             }

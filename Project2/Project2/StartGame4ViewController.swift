@@ -8,32 +8,41 @@
 
 import UIKit
 
-
-
 class StartGame4ViewController: UIViewController {
-
-    // All Outlets
-    @IBOutlet weak var lblScore: UILabel!
-    @IBOutlet weak var cow: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Get shared application
         if let delegate = UIApplication.shared.delegate as? AppDelegate{
+            
+            //Score is not 0 then display Score
             if delegate.score != 0 {
                 lblScore.text = String(delegate.score!)
             }
         }
+        //Cow button is Hidden after click once
         if stateLevel1.cow {
             cow.isHidden = true
         }
     }
     
+    // All Outlets
+    @IBOutlet weak var lblScore: UILabel!
+    @IBOutlet weak var cow: UIButton!
+    
+    //Function
+    
+    // Click cow object methods
     @IBAction func cow(_ sender: Any) {
     
         cow.isHidden = true
         stateLevel1.cow = true
+        
+        //Get shared application
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            
+            //Score is adding new score then display latest Score
             delegate.score = delegate.score! + 10
             lblScore.text = String(delegate.score!)
         }

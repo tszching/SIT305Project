@@ -10,10 +10,10 @@ import UIKit
 
 class Scene2ViewController: UIViewController {
 
+    
+    //All outlets
     @IBOutlet weak var SecScene: UILabel!
-    
     @IBOutlet weak var backB: UIButton!
-    
     @IBOutlet weak var nextB: UIButton!
     
     
@@ -77,13 +77,17 @@ class Scene2ViewController: UIViewController {
         
     }
 
+    
+    //All functions
     @IBAction func SecGame1(_ sender: Any) {
-        
+    //  Let this button identify the storyboard ID and move to the StartGameviewcontroller screen
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SSG") as! SecondGameViewController
         self.present(vc, animated: true, completion: nil)
     }
     
+    
     @IBAction func backL(_ sender: Any) {
+        //  Connected to the Parents ViewController: Back to Level ViewController
         dismiss (animated: true, completion: nil)
     }
     

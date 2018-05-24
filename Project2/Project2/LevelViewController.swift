@@ -47,12 +47,13 @@ class LevelViewController: UIViewController {
     // Show the saved username from Login ViewController
     override func viewDidAppear(_ animated: Bool)
     {
-        // Disable the button until user Score up to 40 
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
             userlbl.text = delegate.userName
+            // Disable the italy button until user Score up to 40
             if delegate.score! >= 40 {
                 toItaly.isEnabled = true
             }
+            // Disable the USA button until user Score up to 80
             if delegate.score! >= 80 {
                 toUSA.isEnabled = true
             }
@@ -63,6 +64,8 @@ class LevelViewController: UIViewController {
     ///
     /// - Parameter sender:
     @IBAction func musicswitch(_ sender: UISwitch) {
+        
+        // True : Switched on
         if sender.isOn == true
         {
             if soundPlayer != nil{
@@ -71,6 +74,7 @@ class LevelViewController: UIViewController {
             
         }
         
+        // False : Switched off
         if sender.isOn == false
         {
             if soundPlayer != nil{
@@ -78,21 +82,10 @@ class LevelViewController: UIViewController {
                 elapsedTime = 0}
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

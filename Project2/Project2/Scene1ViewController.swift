@@ -11,19 +11,19 @@ import UIKit
 
 class Scene1ViewController: UIViewController {
     
+    //Outlet
     @IBOutlet weak var data: UILabel!
     
     // All Functions:
-    
-    //  Connected to the Parents ViewController: Back to Level ViewController
     @IBAction func backtoL(_ sender: Any) {
-        
+        //  Connected to the Parents ViewController: Back to Level ViewController
         dismiss (animated: true, completion: nil)
         
     }
     
-    //  Let this button identify the storyboard ID and move to the StartGameviewcontroller screen
+    
     @IBAction func toGame1(_ sender: Any) {
+        //  Let this button identify the storyboard ID and move to the StartGameviewcontroller screen
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG") as! StartGameViewController; self.present(vc, animated: true, completion: nil)
     }
     

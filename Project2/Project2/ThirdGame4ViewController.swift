@@ -10,28 +10,64 @@ import UIKit
 
 class ThirdGame4ViewController: UIViewController {
 
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //Score is displaying the latest score
+        lblScore.text = String(delegate.score!)
+        
+      
+        if stateLevel3.burger {
+            burger.isHidden = true
+            congratulation.isHidden = false
+            
+            answer.text = "yerba buena"
+        }
     }
+    
+    // All outlets
     @IBOutlet weak var burger: UIButton!
-        @IBOutlet weak var lblScore: UILabel!
+    @IBOutlet weak var lblScore: UILabel!
+    @IBOutlet weak var answer: UITextField!
+    @IBOutlet weak var congratulation: UIButton!
+    
+    
+    @IBAction func burgerClick(_ sender: Any) {
+        burger.isHidden = true
+        stateLevel3.burger = true
+        congratulation.isHidden = false
+        
+        
+        delegate.score = delegate.score! + 10
+        lblScore.text = String(delegate.score!)
+    }
+    
+    
+    @IBAction func answerField(sender: UITextField) {
+        if sender.text! == "yerba buena" {
+            burger.isHidden = false
+            
+        } else {
+            gameOver()
+        }
+    }
+    
+   
+    func gameOver() {
+        //  Identify the storyboard ID and move to the GameOverviewcontroller screen when input is incorrect
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    // Keyboard dismiss when touch outside the textfield
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        answer.resignFirstResponder()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

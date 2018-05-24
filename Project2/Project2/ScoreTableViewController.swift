@@ -15,6 +15,7 @@ class ScoreTableViewController: UITableViewController {
     var scoreHistory: History?
     
     @IBAction func dismissAction(_ sender: Any) {
+        //  Connected to the Parents ViewController: Back to Level ViewController
         dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
@@ -37,6 +38,7 @@ class ScoreTableViewController: UITableViewController {
         return 1
     }
 
+  
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
      
         // Count of saved in-game result in score history
@@ -47,16 +49,19 @@ class ScoreTableViewController: UITableViewController {
         return scoreHistory!.data.count
     }
 
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //Get tableview cell with its "scorecell" id
         let cell = tableView.dequeueReusableCell(withIdentifier: "scorecell", for: indexPath)
 
+        //Score in history
         let scoreInfo = scoreHistory!.data[indexPath.row]
         
-        // display username
+        // Display username
         cell.textLabel?.text = scoreInfo.userName
         
-        // display user's highest score
+        // Display user's highest score
         cell.detailTextLabel?.text = String(scoreInfo.score)
 
         return cell
