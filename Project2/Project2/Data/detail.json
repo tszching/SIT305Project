@@ -1,0 +1,62 @@
+[
+	{
+		"name": "Tulips",
+		"image": "tulip",
+		"detail": "Tulips can live for many years in the proper climate. In good conditions, some species of tulips live for 10-20 years."
+	},
+	{
+		"name": "Lakenvelder cattle",
+		"image": "cow",
+		"detail": "The Dutch Belted is a dairy cattle breed named for its country of origin and its striking color pattern, black with a bright white belt around its middle."
+	},
+	{
+		"name": "Dutch",
+		"image": "hlppl",
+		"detail": "Statistically, Dutch are among the tallest people in Europe. Eye contact and criticism are to be expected when chatting with a Dutch."
+	},
+	{
+		"name": "Windmills",
+		"image": "hl1",
+		"detail": "There is a National Windmill Day, not only in Netherlands."
+	},
+	{
+		"name": "Pizza",
+		"image": "italylogo",
+		"detail": "The first pizza was prepared for King Umberto I and Queen Margherita of Italy on their visit to Naples. And thus, the Margherita pizza was born."
+	},
+	{
+		"name": "Wine",
+		"image": "wine",
+		"detail": "Italy has the largest wine producing country in the world. Quite often wines take the name of the areas or town where the grapes are grown."
+	},
+	{
+		"name": "Pasta",
+		"image": "pasta",
+		"detail": "How many shapes of pasta do you think there are? 5? 10? 25? How about 600? Yep, that's right.There are 600 official pasta shapes produced throughout the world."
+	},
+	{
+		"name": "Caffe",
+		"image": "coffee",
+		"detail": "Most Italians drink their caffe at a bar (not the alcoholic kind), standing up, usually before 9 am. Prices increase if you sit down at a table."
+	},
+	{
+		"name": "Cable car",
+		"image": "car",
+		"detail": "Cable cars are different than trolleys or trams. They run on steel rails with a slot between the tracks where a cable cars grip onto a constantly running cable."
+	},
+	{
+		"name": "Hamburgers",
+		"image": "burger",
+		"detail": "In 1921, the first fast food restaurant was opened which sold hamburgers for just 5 cents!"
+	},
+	{
+		"name": "Fisherman's Wharf",
+		"image": "sanlogo",
+		"detail": "Fisherman's' Wharf is estimated to host no less than 12 million visitors annually by far the most frequently visited place in San Francisco."
+	},
+	{
+		"name": "Golden Gate Bridge",
+		"image": "gate",
+		"detail": "It took 4 years to bulid! Construction on the bridge began in January of 1933, right in the middle of the Great Depression."
+	}
+]

@@ -19,7 +19,7 @@ class ThirdGame2ViewController: UIViewController {
         //Score is displaying the latest score
         lblScore.text = String(delegate.score!)
         
-        //Fisherman button collected
+        // Gate button collected
         if stateLevel3.gate {
             gate.isHidden = true
             downBtn.isHidden = false
@@ -39,7 +39,7 @@ class ThirdGame2ViewController: UIViewController {
     // Check inputed value is correct or not
     @IBAction func yearField(sender: UITextField) {
         
-        // Fisherman button can collect when year.text is correct
+        // Gate button can collect when year.text is correct
         if sender.text! == "1937" {
             gate.isHidden = false
         

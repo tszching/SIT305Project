@@ -51,18 +51,20 @@ class ThirdGame3ViewController: UIViewController {
     // Check inputed value is correct or not
     @IBAction func yearField(sender: UITextField) {
         
-        // Fisherman button can collect when year.text is correct
+        // Car button can collect when year.text is correct
         if sender.text! == "cable car" {
             car.isHidden = false
             
+        // Go gameOver() function otherwise
         } else {
             gameOver()
         }
     }
     
 
-    //  Identify the storyboard ID and move to the GameOverviewcontroller screen when input is incorrect
+    // Function for game over
     func gameOver() {
+        //  Identify the storyboard ID and move to the GameOverviewcontroller screen when input is incorrect
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOverViewController
         self.present(vc, animated: true, completion: nil)
     }

@@ -10,6 +10,9 @@
 		0A45937F20B407FF00E32653 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A45937E20B407FF00E32653 /* Data.json */; };
 		0A45938120B4089400E32653 /* JsonDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A45938020B4089400E32653 /* JsonDataHandler.swift */; };
 		0A45938320B4693B00E32653 /* ObjectStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A45938220B4693B00E32653 /* ObjectStates.swift */; };
+		0AD049E420B72C1D00475072 /* AchievementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD049E320B72C1D00475072 /* AchievementTableViewController.swift */; };
+		0AD049E620B72C2E00475072 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD049E520B72C2E00475072 /* AchievementCell.swift */; };
+		0AD049EA20B7326200475072 /* detail.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AD049E920B7326200475072 /* detail.json */; };
 		5917D2FC20AC55E100EF31CE /* projectdata1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5917D2FB20AC55DF00EF31CE /* projectdata1.txt */; };
 		591CBB0D20B3263600E0F901 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591CBB0C20B3263600E0F901 /* GameOverViewController.swift */; };
 		597F09BC20A5CB45001597A0 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F09BB20A5CB45001597A0 /* Gif.swift */; };
@@ -70,6 +73,9 @@
 		0A45937E20B407FF00E32653 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		0A45938020B4089400E32653 /* JsonDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataHandler.swift; sourceTree = "<group>"; };
 		0A45938220B4693B00E32653 /* ObjectStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStates.swift; sourceTree = "<group>"; };
+		0AD049E320B72C1D00475072 /* AchievementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementTableViewController.swift; sourceTree = "<group>"; };
+		0AD049E520B72C2E00475072 /* AchievementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
+		0AD049E920B7326200475072 /* detail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = detail.json; sourceTree = "<group>"; };
 		5917D2FB20AC55DF00EF31CE /* projectdata1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projectdata1.txt; sourceTree = "<group>"; };
 		591CBB0C20B3263600E0F901 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		597F09BB20A5CB45001597A0 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 				5917D2FB20AC55DF00EF31CE /* projectdata1.txt */,
 				59E6A16720B5127700F86FEA /* projectdata2.txt */,
 				59E6A16F20B6D4D400F86FEA /* projectdata3.txt */,
+				0AD049E920B7326200475072 /* detail.json */,
 				0A45937E20B407FF00E32653 /* Data.json */,
 			);
 			path = Data;
@@ -191,6 +198,8 @@
 				59C81A6E20A4B25700D8FE49 /* ThirdGame2ViewController.swift */,
 				59E6A16B20B53FBC00F86FEA /* ThirdGame3ViewController.swift */,
 				59E6A16D20B53FD700F86FEA /* ThirdGame4ViewController.swift */,
+				0AD049E320B72C1D00475072 /* AchievementTableViewController.swift */,
+				0AD049E520B72C2E00475072 /* AchievementCell.swift */,
 				59C81A1720A49BCF00D8FE49 /* AppDelegate.swift */,
 				59C81A1920A49BCF00D8FE49 /* ViewController.swift */,
 				59C81A1B20A49BCF00D8FE49 /* Main.storyboard */,
@@ -344,6 +353,7 @@
 				597F09C020A6E930001597A0 /* Music1.mp3 in Resources */,
 				0A45937F20B407FF00E32653 /* Data.json in Resources */,
 				59C81A2220A49BD200D8FE49 /* Assets.xcassets in Resources */,
+				0AD049EA20B7326200475072 /* detail.json in Resources */,
 				59C81A1D20A49BCF00D8FE49 /* Main.storyboard in Resources */,
 				59E6A16A20B53C8000F86FEA /* tourguy.gif in Resources */,
 			);
@@ -373,6 +383,7 @@
 				0A45938120B4089400E32653 /* JsonDataHandler.swift in Sources */,
 				59AE585C20B3F00D00D261F4 /* ScoreTableViewController.swift in Sources */,
 				59C81A4B20A4AFB400D8FE49 /* LoginViewController.swift in Sources */,
+				0AD049E420B72C1D00475072 /* AchievementTableViewController.swift in Sources */,
 				59C81A1A20A49BCF00D8FE49 /* ViewController.swift in Sources */,
 				59C81A1820A49BCF00D8FE49 /* AppDelegate.swift in Sources */,
 				59C81A6720A4B1D400D8FE49 /* StartGame5ViewController.swift in Sources */,
@@ -382,6 +393,7 @@
 				59C81A5520A4B0A500D8FE49 /* Scene2ViewController.swift in Sources */,
 				59E6A16C20B53FBC00F86FEA /* ThirdGame3ViewController.swift in Sources */,
 				59C81A6520A4B1C600D8FE49 /* StartGame4ViewController.swift in Sources */,
+				0AD049E620B72C2E00475072 /* AchievementCell.swift in Sources */,
 				59C81A6120A4B1AE00D8FE49 /* StartGame2ViewController.swift in Sources */,
 				59C81A5F20A4B19300D8FE49 /* StartGameViewController.swift in Sources */,
 				59C81A6F20A4B25700D8FE49 /* ThirdGame2ViewController.swift in Sources */,

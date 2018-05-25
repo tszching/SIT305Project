@@ -23,6 +23,12 @@ struct History: Codable {
     var data: [UserInfo]
 }
 
+//Collected Object data
+struct ObjectJson: Codable {
+    var name: String
+    var image: String
+    var detail: String
+}
 
 // Read json data from Data.json file
 func readData() -> History? {
@@ -94,4 +100,22 @@ func getHighScore(name: String) -> Int {
         
     }
     return highScore
+}
+
+//Read object data from detail.json
+func getObjectData() -> [ObjectJson]? {
+    if let path = Bundle.main.path(forResource: "detail", ofType: "json") {
+        do {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+            let decoder = JSONDecoder()
+            let json = try decoder.decode([ObjectJson].self, from: data)
+            return json
+        } catch let err {
+            // catch error
+            print(err)
+            return nil
+        }
+    }
+    
+    return nil
 }
