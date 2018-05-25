@@ -570,4 +570,16 @@ Still working for current features:
 
 -Achievement
 
-	
+
+———————————————————————————
+*In Week 11  | 25th May
+———————————————————————————
+
+[Chloe] inserted AchievementCell.swift for showing data on Achievement table view screen.
+[Chloe] processed detail.json for Achievement screen to display achievement data
+[Chloe] inserted AchievementTableViewController.swift to read and get data from detail.json
+[Chloe] updated JsonDataHandler.swift for the collected Object data.
+
+Feature added:
+
+-Display all achievement details
