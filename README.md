@@ -22,7 +22,7 @@ SID:215326179
 
 This is a group project 'Global treasure explorer' in developing a single player - text-based Role-playing game(RPG) in Xcode where users experiences to direct the main character to defeating or interacting the auto-moving objects in each level. The key rules users need to follow are: choosing different situation in defeating or avoiding enemies and discovering the Four treasures in each level. Once the user has discovered each of the Four treasures, they can progress to the next level. The game will feature three countries with three dedicated levels for the user to complete. 
 
-The mobile game app development contains various functions such as menu options, game operation, location levels, achievement list and score record. As for further sub features hope to accomplish are the User Custom Setting and User Game Guideline.
+The mobile game app development contains various functions such as menu options, game operation, location levels, achievement list and score record. As for further sub features hope to accomplish are the score, music and achievement.
 
 They will be functioning in such as the using external data saving and displaying dat
 The Purpose of this text-based RPG is to keep users entertainment and reducing their stress while they can learn the education in-game from the countries they explore. 
@@ -66,6 +66,10 @@ Directory Structure is where the coding files,assets images folders and all othe
 Important Code:
 
 My ViewController.swift files which included:
+-JsonDataHandler.swift to read and write and update the game data through data.json 
+-ObjectStates.swift to temporarily data store from AppDelegate for all the target objects.
+-AchievementCell.swift show all taget objects data from detail.json
+-Detail.json for the struture data on achievement screen
 -ViewController.swift is the Menu page where you select to go to another page
 -AboutViewController.swift is about the Project Descirption.
 -LevelViewController.swift is the level selection before the game starts.
@@ -82,187 +86,120 @@ Project2 > Project2 > Data (All the json and text datas is within this folder)
 
 # ==Data Structure==
 
-Level: 
+Detail.json:
 
-import UIKit
-import AVFoundation
-
-class LevelViewController: UIViewController {
-    
-    // Variables
-    var soundPlayer: AVAudioPlayer?
-    var elapsedTime: TimeInterval = 0
-    
-    
-    // Do any additional setup after loading the view.
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let path = Bundle.main.path(forResource: "Music1", ofType:"mp3")
-        let url = URL(fileURLWithPath: path!)
-        
-        do
-        {
-            try soundPlayer = AVAudioPlayer(contentsOf: url)
-        }
-        catch {print("file not availale")}
-        
-    }
-
-       
-
-    @IBAction func backH(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    @IBAction func Game1(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG") as! StartGameViewController
-        self.present(vc, animated: true,completion: nil)
-    }
-    /// Switching music player
-    ///
-    /// - Parameter sender:
-    @IBAction func musicswitch(_ sender: UISwitch) {
-        if sender.isOn == true
-        {
-            if soundPlayer != nil{
-                soundPlayer!.currentTime = elapsedTime
-                soundPlayer!.play()}
-            
-        }
-        
-        if sender.isOn == false
-        {
-            if soundPlayer != nil{
-                soundPlayer!.stop()
-                elapsedTime = 0}
-        }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-StartGame:
-
-    @IBAction func Game2(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SG2") as! StartGame2ViewController
-        self.present(vc, animated: true,completion: nil)
-    }
-    
-StartGame2:
-
-    // Variables
-     var gameTimer : Timer?
-    var gravity : UIGravityBehavior?
-    var animator : UIDynamicAnimator?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Set timer to show snowflaks
-        gameTimer = Timer.scheduledTimer(timeInterval: 1,
-                                         target: self,
-                                         selector: #selector(StartGame2ViewController.addenemy(_ :)), userInfo: nil, repeats: true)
-        
-        // Register an animator
-        animator = UIDynamicAnimator(referenceView: self.view)
-        gravity = UIGravityBehavior(items:[])
-        
-        //Gravity magnitude and direction
-        let vector = CGVector(dx: 0.0, dy: 0.1)
-        gravity?.gravityDirection = vector
-        animator?.addBehavior(gravity!)
-        // Do any additional setup after loading the view.
-    }
+[
+	{
+		"name": "Tulips",
+		"image": "tulip",
+		"detail": "Tulips can live for many years in the proper climate. In good conditions, some species of tulips live for 10-20 years."
+	},
+	{
+		"name": "Lakenvelder cattle",
+		"image": "cow",
+		"detail": "The Dutch Belted is a dairy cattle breed named for its country of origin and its striking color pattern, black with a bright white belt around its middle."
+	},
+	{
+		"name": "Dutch",
+		"image": "hlppl",
+		"detail": "Statistically, Dutch are among the tallest people in Europe. Eye contact and criticism are to be expected when chatting with a Dutch."
+	},
+	{
+		"name": "Windmills",
+		"image": "hl1",
+		"detail": "There is a National Windmill Day, not only in Netherlands."
+	},
+	{
+		"name": "Pizza",
+		"image": "italylogo",
+		"detail": "The first pizza was prepared for King Umberto I and Queen Margherita of Italy on their visit to Naples. And thus, the Margherita pizza was born."
+	},
+	{
+		"name": "Wine",
+		"image": "wine",
+		"detail": "Italy has the largest wine producing country in the world. Quite often wines take the name of the areas or town where the grapes are grown."
+	},
+	{
+		"name": "Pasta",
+		"image": "pasta",
+		"detail": "How many shapes of pasta do you think there are? 5? 10? 25? How about 600? Yep, that's right.There are 600 official pasta shapes produced throughout the world."
+	},
+	{
+		"name": "Caffe",
+		"image": "coffee",
+		"detail": "Most Italians drink their caffe at a bar (not the alcoholic kind), standing up, usually before 9 am. Prices increase if you sit down at a table."
+	},
+	{
+		"name": "Cable car",
+		"image": "car",
+		"detail": "Cable cars are different than trolleys or trams. They run on steel rails with a slot between the tracks where a cable cars grip onto a constantly running cable."
+	},
+	{
+		"name": "Hamburgers",
+		"image": "burger",
+		"detail": "In 1921, the first fast food restaurant was opened which sold hamburgers for just 5 cents!"
+	},
+	{
+		"name": "Fisherman's Wharf",
+		"image": "sanlogo",
+		"detail": "Fisherman's' Wharf is estimated to host no less than 12 million visitors annually by far the most frequently visited place in San Francisco."
+	},
+	{
+		"name": "Golden Gate Bridge",
+		"image": "gate",
+		"detail": "It took 4 years to bulid! Construction on the bridge began in January of 1933, right in the middle of the Great Depression."
+	}
+]
 
 
-    
-    @objc func addenemy ( _ : Any) {
-        
-        //Pick a random x position for the balloon
-        let xCoordinate = arc4random() % UInt32 (self.view.bounds.width)
-        
-        //Create a button, set Image, assign touchUpInside handler, add it to the view and gravity animator
-        
-        let btn = UIButton(frame: CGRect (x: Int(xCoordinate), y:60, width: 30, height : 30))
-        btn.setImage(UIImage(named: "enemy2"), for: .normal)
-        btn.addTarget(self, action: #selector(self.enemypopup(sender:)), for: .touchUpInside )
-        self.view.addSubview(btn)
-        
-        gravity?.addItem( btn as UIView)
-        
-    }
-    
-    @objc func enemypopup (sender : UIButton) {
-        
-        sender.setImage(UIImage (named : "enemy1"), for: .normal)
-        UIView.animate(withDuration: 0.4, animations:{sender.alpha = 0},
-                       completion: {(true) in sender.removeFromSuperview()})
-        
-    }
-    
+projectdata1,2,3 .txt:
 
+  One day, I heard someone
+ said: if you are alive,
+ you cannot be bored in San
+ Francisco.
+  If you are not alive,
+ San Francisco will bring
+ you to life.
 
-About:
+  Why? San Francisco city
+ is where people are never
+ more abroad than when
+ they are at home.
 
-    @IBAction func backHome(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-Setting: 
+  This will be my very last
+ stop, then back the reality
+ WORK! I'll enjoy every last
+ moment!!!!
 
-import UIKit
-import AVFoundation
+-----------------------------------
+  Beautiful!Beautiful!Beautiful! 
+ I can't believe what I'm seeing 
+ now, the most romantic city on 
+ this planet Venezia.
+ 
+  Watching city of lights, 
+ enjoying the wind brushed my 
+ cheek, wish I can stay for 
+ pause this moment for a while
+ but here I am come to all the 
+ way along this journey.
+ 
+  Let me start to explore you 
+ Italy! hIl mio cuore è solo tuo!
+-------------------------------------
+  Wow I have finally arrived to this
+ beautiful land in Holland.
 
-class SettingViewController: UIViewController {
+  This will be an amazing journey,
+ I can't wait to exploring things.
 
-    // Variables
-    var soundPlayer: AVAudioPlayer?
-    var elapsedTime: TimeInterval = 0
-    
-    // Do any additional setup after loading the view.
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let path = Bundle.main.path(forResource: "Music1", ofType:"mp3")
-        let url = URL(fileURLWithPath: path!)
-        
-        do
-        {
-            try soundPlayer = AVAudioPlayer(contentsOf: url)
-        }
-        catch {print("file not availale")}
-        
-    }
-    
-    @IBAction func backing(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-    // Volume changes via slider function
-    @IBAction func slider(_ sender: UISlider) {
-        
-        soundPlayer?.volume = sender.value
-    }
-    
-    /// Switching music player
-    ///
-    /// - Parameter sender:
-    @IBAction func musicswitch(_ sender: UISwitch) {
-        if sender.isOn == true
-        {
-            if soundPlayer != nil{
-                soundPlayer!.currentTime = elapsedTime
-                soundPlayer!.play()}
-            
-        }
-        
-        if sender.isOn == false
-        {
-            if soundPlayer != nil{
-                soundPlayer!.stop()
-                elapsedTime = 0}
-        }
-    }
+  Hopefully, this journey will have
+ full of excited experience
+ but it is a happy trip if
+ I will be only meeting the good
+ people within this journey...
+
+  Now! Let me take a look at
+ what's up there!!
 
