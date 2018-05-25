@@ -1,0 +1,585 @@
+
+———————————————————————————
+*In Week 3 | 19th March 
+———————————————————————————
+
+[Chloe] researched some RPG game, text based RPG for project plan. 
+[Chloe] had the concept map for Project 2.
+
+
+Feature added: 
+- Game Concept map 
+
+
+Still working for current features:
+-UI designing for screens
+
+
+
+
+———————————————————————————
+*In Week 5  | 10th April 
+———————————————————————————
+
+[Chloe] reviewed pervious projects.
+[Chloe] checked youtube swift tutorials for text based RPG. 
+[Chloe] designed first template for text based RPG game.
+[Chloe] started Home screen.
+[Chloe] started Start Game screen.
+[Chloe] collected images for UI
+
+
+Feature added: 
+- UI design for Home screen
+- UI design for Start Game screen
+- Images and buttons displaying
+
+
+Still working for current features:
+-UI designing for screens
+-UI Level Screen
+-UI navigating buttons
+-Target objects buttons
+-Animation function
+-Alert Window function
+-Popup window function
+
+
+
+
+———————————————————————————
+*In Week 6  | 19th April 
+———————————————————————————
+
+[Chloe] watched youtube videos for UI design functions.
+[Chloe] designed the more UI for the storyboard template in text based RPG.
+[Chloe] started Level Screen (3 game level layers).
+[Chloe] implemented navigated buttons.
+[Chloe] implemented target object buttons. 
+[Chloe] started animation function.
+[Chloe] started alert window function.
+[Chloe] started popup window function.
+
+
+Feature added: 
+-UI designing for screens
+-UI Level Screen
+-UI navigating buttons
+-Target objects buttons
+-Animation function
+-Alert Window function
+-Popup window function
+
+
+Still working for current features:
+-Design Game icon
+-Music sound effect
+-Correct navigating path
+-Decide what enemy to import with this game
+-More screens adding: About, Setting
+
+
+———————————————————————————
+*In Week 6  | 20th April 
+———————————————————————————
+
+[Chloe] designed more screens for the UI template.
+[Chloe] added Setting Screen.
+[Chloe] added About Screen.
+[Chloe] designed and updated Game Icon - Global Treasure Explorer in Home screen.
+[Chloe] designed and updated button navigating path.
+[Chloe] had applied music sound function and Slider bar effect of the music.
+[Chloe] designed enemy popup animation to be more creative for this game. 
+[Chloe] adding Score for further collect point of 4 target objects.
+
+
+Feature added: 
+-UI designing for screens: About and Setting screens
+-Correct navigating path and buttons
+-Game Icon Designing
+-Enemy Popup function
+-Imported music background
+-Slider bar effect (changing volume of music)
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score for users
+- 4 Target Object displaying in correct order 
+-.txt data Game scene
+
+
+
+
+———————————————————————————
+*In Week 7  | 23th April 
+———————————————————————————
+
+[Chloe] added more UI screens for in-game level 2.
+[Chloe] read and write .txt file.
+[Chloe] Stack Overflow the .json data handling.
+[Chloe] watched youtube tutorials for .json parse data.
+
+
+Feature added: 
+-Screens for Second level: StartGame4 and StartGame5
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users
+- 4 Target Object displaying in correct order 
+-.txt data Game scene
+-.json data handler for score, username
+
+
+
+
+
+———————————————————————————
+*In Week 7  | 24th April 
+———————————————————————————
+
+[Chloe] imported splash screen
+[Chloe] read and write .txt file.
+[Chloe] Stack Overflow the .json parse data handling.
+[Chloe] watched youtube tutorials for .json parse data.
+[Chloe] tried .json parse data.
+
+
+Feature added: 
+-Splash screen before Home page
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users
+- 4 Target Object displaying in correct order 
+-.txt data Game scene
+-.json data handler for score, username
+
+
+———————————————————————————
+*In Week 7  | 26th April 
+———————————————————————————
+
+[Chloe] found bug as cannot run the project.
+[Chloe] made all the screen and objects layout placed in a fixed area.
+
+
+Feature added: 
+-Bug fixed (Missing the mp3 file)
+-Layout all screen and objects for a fixed area.
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users
+- 4 Target Object displaying in correct order 
+-.txt data Game scene
+-.json data handler for score, username
+
+
+
+
+———————————————————————————
+*In Week 8  | 2nd May 
+———————————————————————————
+
+[Chloe] made animation framework dropping objects
+[Chloe] read and write .txt file.
+[Chloe] modified the Start Game 2 ViewController with the animation framwork
+[Chloe] tried .json parse data handling.
+
+
+Feature added: 
+-Animation framework dropping objects
+-Appear dropping objects when moving to Start Game 2 Screen.
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users
+- 4 Target Object displaying in correct order 
+-.txt data Game scene
+-.json data handler for score, username
+
+
+
+———————————————————————————
+*In Week 8  | 5th May 
+———————————————————————————
+
+[Chloe] has updated the correct nagiavtion
+[Chloe] tried .json parse data handling.
+[Chloe] had inserted more UI screens and ViewController connected.
+
+
+Feature added: 
+-Nagiavting buttons in order
+-Addition for UI Screens and ViewController
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users
+-.json data handler for score, username
+
+
+———————————————————————————
+*In Week 8  | 8th May 
+———————————————————————————
+
+[Chloe] has inserted more game scene in different levels
+[Chloe] tried .json parse data handling.
+
+
+Feature added: 
+-Game scene (Story) in each level
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users
+-.json data handler for score, username
+
+
+
+
+———————————————————————————
+*In Week 9  | 9th May 
+———————————————————————————
+
+[Chloe] made fading in and out animation text and buttons in story scene.
+[Chloe] tried working the user and score in the json handler. 
+[Chloe] worked json parse data handling.
+
+
+Feature added: 
+-Fading in and out animation text and buttons in story scene
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users
+-.txt data Game scene
+-Storing username and score
+
+
+
+
+———————————————————————————
+*In Week 9  | 10th May 
+———————————————————————————
+
+[Chloe] updated login screen and game screens
+[Chloe] tried working the user and score in the json handler. 
+[Chloe] worked json parse data handling.
+
+
+Feature added: 
+-Login and game screen updated
+-Storing username and score
+
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users 
+-.txt data Game scene
+-.json data handler for score, username
+
+
+
+———————————————————————————
+*In Week 9  | 11th May 
+———————————————————————————
+
+[Chloe] imported the local gifs for animated animation 
+[Chloe] tried working the user and score in the json handler. 
+[Chloe] worked json parse data handling.
+
+
+
+Feature added: 
+
+-Local gifs animated animation
+-Storing username and score
+
+
+Still working for current features:
+
+-App icon run in Xcode simulator 
+-Score for users
+-.txt data Game scene
+-.json data handler for score, username
+
+
+
+———————————————————————————
+*In Week 9  | 12th May 
+———————————————————————————
+
+[Chloe] created the user logining fucntion.
+[Chloe] used alert message popup window under login screen.
+[Chloe] updated navigation buttons included the hidden taget objects.
+[Chloe] tried working the user and score in the json handler. 
+[Chloe] worked json parse data handling.
+
+
+
+Feature added: 
+-Login function
+-Alert message popup window
+-Navigating buttons
+-Hidden the target objects buttons
+-Storing username and score
+
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users
+-.txt data Game scene
+-.json data handler for score, username
+
+
+
+———————————————————————————
+*In Week 10  | 14th May 
+———————————————————————————
+
+[Chloe] found bugs in login screen as it cannot run
+[Chloe] tried working the user and score in the json handler. 
+[Chloe] worked json parse data handling.
+
+
+
+Feature added: 
+
+-Bug fixed(use self.storyboard instantiateViewController instead of self.performSegue)
+-Storing username and score
+
+
+
+Still working for current features:
+-App icon run in Xcode simulator 
+-Score history for users
+-.txt data Game scene
+-.json data handler for score, username
+
+
+
+———————————————————————————
+*In Week 10  | 15th May 
+———————————————————————————
+
+[Chloe] has used Photoshop to implement the game icon
+[Chloe] imported the icon to all size 
+
+
+
+Feature added: 
+-App all size icon run in Xcode simulator 
+
+
+Still working for current features:
+-Score history for users
+-.txt data Game scene
+-.json data handler for score, username
+
+
+
+———————————————————————————
+*In Week 10  | 16th May 
+———————————————————————————
+
+[Chloe] Operated read and write external file via.txt
+[Chloe] tried working the user and score in the json handler. 
+[Chloe] worked json parse data handling.
+
+
+Feature added: 
+-.txt data Game scene (read and write)
+-Storing username and score
+
+
+Still working for current features:
+-Score history for users
+-.json data handler for score, username
+
+
+
+
+———————————————————————————
+*In Week 10  | 17th May 
+———————————————————————————
+
+[Chloe] updated few images and screens: Main.storyboard and scene1ViewController.
+[Chloe] tried working the user and score in the json handler. 
+[Chloe] worked json parse data handling.
+
+
+Feature added: 
+-Main.storyboard updated
+-Scene1ViewController upated
+-Storing username and score
+
+
+Still working for current features:
+-Score history for users
+-.json data handler for score, username.
+
+
+
+
+———————————————————————————
+*In Week 10  | 20th May 
+———————————————————————————
+
+[Chloe] had displayed external file data in label using .txt.
+[Chloe] tried working the user and score in the json handler. 
+[Chloe] worked json parse data handling.
+
+
+Feature added: 
+-Display external data from .txt file.
+-Storing username and score
+
+
+
+Still working for current features:
+-Score History for users
+-.json data handler for score, username
+
+
+
+
+———————————————————————————
+*In Week 11  | 21th May 
+———————————————————————————
+
+[Chloe] applied navigation buttons to be hidden or show.
+[Chloe] tried working the user and score in the json handler.
+[Chloe] had displayed all external files data in label using .txt.
+[Chloe] worked json parse data handling.
+
+
+
+Feature added: 
+-Display all external datas from .txt file
+-Displayable data in paragraph
+-Navigation buttons in correct path
+-Storing username and score
+
+
+
+Still working for current features:
+-Score for users
+-.json data handler for score, username
+
+
+
+———————————————————————————
+*In Week 11  | 22th May
+———————————————————————————
+
+[Chloe] applied GameOver ViewController to each level.
+[Chloe] applied Score TableViewController for the target object.
+[Chloe] inserted data.json and store game data as json structure.
+[Chloe] inserted JsonDataHandler.swift to read, write and update the json file.
+[Chloe] processed json data handler to store username. 
+[Chloe] processed json data handler to store user's score.
+[Chloe] inserted ObjectStates.swift for all target objects.
+[Chloe] processed the target object collection in each level through storing each object temporarily by ObjectStates.swift.
+
+
+Feature added: 
+
+-GameOver function
+-Score function
+-data.json
+-JsonDataHandler.swift to read, write and update the json file.
+-json data handler to store user's score
+-json data handler to store username
+-ObjectStates.swift to store each object temporarily
+
+
+Still working for current features:
+
+-Level 1 Game History
+-Level 2 Game History
+-Level 3 Game History
+
+
+———————————————————————————
+*In Week 11  | 23th May
+———————————————————————————
+
+[Chloe] applied navigation buttons to be hidden or show.
+[Chloe] applied target object to be hidden or show.
+[Chloe] added comments to all functions and methods.
+[Chloe] processed the calculation in each screen by the target object.
+[Chloe] applied Gameover function to reset the score for user.
+[Chloe] processed json data handler to store user's score and username.
+[Chloe] processed score history function from reading data by JasonDataHandler.swift.
+[Chloe] processed the target object collection in each level through storing each object temporarily by ObjectStates.swift.
+
+
+Feature added: 
+
+-score table screen display the correct calculation 
+-reset 0 score when user play again
+-level 1 Game History is done
+-all target objects display correct order
+-comment explaining
+
+
+Still working for current features:
+
+-Level 2 Game History
+-Level 3 Game History
+
+
+———————————————————————————
+*In Week 11  | 24th May
+———————————————————————————
+
+[Chloe] applied navigation buttons to be hidden or show.
+[Chloe] applied target object to be hidden or show.
+[Chloe] added comments to all functions and methods.
+[Chloe] processed the calculation in each screen by the target object.
+[Chloe] applied Gameover function to reset the score for user.
+[Chloe] processed json data handler to store user's score and username.
+[Chloe] processed score history function from reading data by JasonDataHandler.swift.
+[Chloe] processed the target object collection in each level through storing each object temporarily by ObjectStates.swift.
+[Chloe] processed highest level difficulties by make only one correct input value.
+
+
+Feature added: 
+
+-higher level with higher difficulties
+-score table screen display the correct calculation 
+-reset 0 score when user play again
+-level 1,2,3 Game History is done
+-all target objects display correct order
+-comment explaining
+
+
+Still working for current features:
+
+-Achievement
+
+
+———————————————————————————
+*In Week 11  | 25th May
+———————————————————————————
+
+[Chloe] inserted AchievementCell.swift for showing data on Achievement table view screen.
+[Chloe] processed detail.json for Achievement screen to display achievement data
+[Chloe] inserted AchievementTableViewController.swift to read and get data from detail.json
+[Chloe] updated JsonDataHandler.swift for the collected Object data.
+
+Feature added:
+
+-Display all achievement details
